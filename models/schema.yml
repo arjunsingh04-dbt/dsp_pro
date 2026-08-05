@@ -1,0 +1,13 @@
+models:
+  - name: stg_consumer_application_detail
+
+    columns:
+
+      - name: consumer_application_number
+        tests:
+          - not_null
+          
+
+      - name: created_date
+        tests:
+          - not_null
