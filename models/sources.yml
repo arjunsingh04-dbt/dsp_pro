@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw
+    database: DSP_PROJ
+    schema: RAW
+
+    tables:
+      - name: CONSUMER_APPLICATION_DETAIL
+      - name: ERP_REV
+      - name: POSE_MACHINE_D
+      - name: ERP_BUDGET_WORKFLOW_AMOUNT
+      - name: BILLDESK_PAYMENT_RES
