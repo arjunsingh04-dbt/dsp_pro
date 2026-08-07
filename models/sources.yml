@@ -11,3 +11,11 @@ sources:
       - name: POSE_MACHINE_D
       - name: ERP_BUDGET_WORKFLOW_AMOUNT
       - name: BILLDESK_PAYMENT_RES
+
+  - name: raw
+    database: DBT_PRACTICE
+    schema: RAW
+
+    tables:
+      - name: CUSTOMERS
+      - name: CUSTOMERS_CHECK

@@ -54,3 +54,8 @@ models:
 
       facts:
        +materialized: table
+
+    SCD:
+      +database: DBT_PRACTICE
+      +schema: STAGING
+      +materialized: table
