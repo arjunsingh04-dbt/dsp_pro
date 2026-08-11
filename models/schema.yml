@@ -21,5 +21,5 @@ models:
   - name: fact_pose_machine_d
     config:
         materialized: view
-        tags: ['heavy']
+        tags: ['heavy','daily']
         schema: MARTS
