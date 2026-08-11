@@ -11,3 +11,15 @@ models:
       - name: created_date
         tests:
           - not_null
+
+  - name: fact_payments
+    config:
+        materialized: view
+        tags: ['heavy']
+        schema: MARTS
+
+  - name: fact_pose_machine_d
+    config:
+        materialized: view
+        tags: ['heavy']
+        schema: MARTS

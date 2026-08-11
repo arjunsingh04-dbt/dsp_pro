@@ -1,3 +1,4 @@
+{{ config( materialized='view',tags=['daily','facts'],schema='MARTS') }}
 SELECT
   CONS_APP_NO AS CONSUMER_APPLICATION_NUMBER,
     SUPERVISION_AMNT,

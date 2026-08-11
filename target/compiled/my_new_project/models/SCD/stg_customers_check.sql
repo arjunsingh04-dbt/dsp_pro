@@ -1,0 +1,2 @@
+select * from 
+DBT_PRACTICE.RAW.CUSTOMERS_CHECK
