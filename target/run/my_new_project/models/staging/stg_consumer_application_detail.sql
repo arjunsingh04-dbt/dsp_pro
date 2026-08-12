@@ -1,0 +1,30 @@
+
+  create or replace   view DBT_PRACTICE.RAW.stg_consumer_application_detail
+  
+  
+  
+  
+  as (
+    
+
+select CONSUMER_APPLICATION_NUMBER,CONSUMER_NAME,
+ADDRESS,
+
+
+
+
+    TO_DATE(
+        TO_TIMESTAMP_NTZ(
+            CREATED,
+            'DD-MM-YY HH12:MI:SS.FF9 AM'
+        )
+    )
+
+
+
+ as created_date,
+APPLICATION_STATUS,SHORT_DESCRIPTION_OF_WORK,NATURE_OF_WORK_ID,
+premise_area_type
+from  DSP_PROJ.RAW.CONSUMER_APPLICATION_DETAIL
+  );
+

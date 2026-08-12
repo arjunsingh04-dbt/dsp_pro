@@ -1,0 +1,18 @@
+
+  create or replace   view DSP_PROJ.MARTS.fact_payments
+  
+  
+  
+  
+  as (
+    SELECT
+    CONSUMER_APPLICATION_NO AS CONSUMER_APPLICATION_NUMBER,
+    TRANSACTION_DATE,
+    MOBILE_NO,
+    REG_AMOUNT,
+    PAYMENT_METHOD_TYPE,
+    ADDITIONAL_INFO1,
+    CHARGE_AMOUNT
+FROM DSP_PROJ.STAGING.stg_billdesk_payment_res
+  );
+

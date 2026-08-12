@@ -1,3 +1,5 @@
+{{ config( materialized='view',tags=['daily','facts'],schema='MARTS') }}
+
 SELECT
     distinct CONSUMER_APPLICATION_NO AS CONSUMER_APPLICATION_NUMBER,
     LOCATION,

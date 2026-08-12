@@ -1,13 +1,64 @@
+version: 2
+
+sources:
+  - name: raw
+    database: DBT_PRACTICE
+    schema: SNAPSHOTS
+
+    tables:
+      - name: stg_customers
+        config:
+          loaded_at_field: updated_at
+          freshness:
+            warn_after:
+              count: 1
+              period: minute
+
+            error_after:
+              count: 2
+              period: hour
 models:
-  - name: stg_consumer_application_detail
-
+  - name: stg_erp_budget_workflow_amount
     columns:
+      - name: je_return_amount
+        tests:
+          - positive_value
 
+
+  - name: stg_consumer_application_detail
+    columns:
       - name: consumer_application_number
         tests:
           - not_null
-          
 
       - name: created_date
         tests:
+          - not_null
+
+  - name: fact_payments
+    config:
+      materialized: view
+      tags:
+        - heavy
+      schema: MARTS
+
+  - name: fact_pose_machine_d
+    config:
+      materialized: view
+      tags:
+        - heavy
+        - daily
+      schema: MARTS
+
+  - name: stg_customers
+    config:
+      materialized: view
+      schema: SNAPSHOTS
+      tags:
+        - scd2
+
+    columns:
+      - name: customer_id
+        tests:
+          - unique
           - not_null

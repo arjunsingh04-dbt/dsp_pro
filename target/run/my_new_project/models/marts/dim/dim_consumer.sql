@@ -1,0 +1,19 @@
+
+  create or replace   view DSP_PROJ.MART.dim_consumer
+  
+  
+  
+  
+  as (
+    SELECT DISTINCT
+    CONSUMER_APPLICATION_NUMBER,
+    CONSUMER_NAME,
+    ADDRESS,
+    CREATED_DATE,
+    APPLICATION_STATUS,
+    SHORT_DESCRIPTION_OF_WORK,
+    NATURE_OF_WORK_ID,
+    PREMISE_AREA_TYPE
+FROM DSP_PROJ.STAGING.stg_consumer_application_detail
+  );
+

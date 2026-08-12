@@ -1,0 +1,24 @@
+
+  create or replace   view DSP_PROJ.MARTS.fact_budget
+  
+  
+  
+  
+  as (
+    
+
+SELECT
+    distinct CONSUMER_APPLICATION_NO AS CONSUMER_APPLICATION_NUMBER,
+    LOCATION,
+    SUPERVISION_AMOUNT,
+    ESTIMATE_AMOUNT,
+    CGST,
+    SGST,
+    CREATED_AT,
+    TOTAL_SUPV_AMOUNT,
+    JE_RETURN_AMOUNT,
+    MINUS_COST,
+    VERSION_NUMBER
+FROM DSP_PROJ.STAGING.stg_erp_budget_workflow_amount
+  );
+
