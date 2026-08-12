@@ -1,18 +1,11 @@
 
+  create or replace   view DBT_PRACTICE.SNAPSHOTS.stg_customers_check
   
-    
-
-create or replace transient table DBT_PRACTICE.STAGING.stg_customers_check
-    
-    
-    
-    
-    
-
-    as (select * from 
+  
+  
+  
+  as (
+    select * from 
 DBT_PRACTICE.RAW.CUSTOMERS_CHECK
-    )
-;
+  );
 
-
-  

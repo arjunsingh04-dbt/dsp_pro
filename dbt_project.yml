@@ -56,14 +56,15 @@ models:
       
 
       dim:
-        +materialized: table
+        +materialized: view
         +tags: ['mart']
 
       facts:
-        +materialized: table
+        +materialized: view
         +tags: ['mart']
 
     SCD:
       +database: DBT_PRACTICE
-      +schema: STAGING
-      +materialized: table
+      +schema: SNAPSHOTS
+      +materialized: view
+      +tags: ['scd2']

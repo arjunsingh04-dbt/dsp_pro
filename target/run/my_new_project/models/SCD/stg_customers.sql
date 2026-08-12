@@ -1,15 +1,11 @@
 
+  create or replace   view DBT_PRACTICE.SNAPSHOTS.stg_customers
   
-    
-
-create or replace transient table DBT_PRACTICE.STAGING.stg_customers
-    
-    
-    
-    
-    
-
-    as (select
+  
+  
+  
+  as (
+    select
 
 customer_id,
 
@@ -20,8 +16,5 @@ city,
 updated_at
 
 from DBT_PRACTICE.RAW.CUSTOMERS
-    )
-;
+  );
 
-
-  
