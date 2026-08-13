@@ -7813,3 +7813,1983 @@ parsing.
 [0m17:10:40.369620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000262303DFD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000262339EA620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000262339EA780>]}
 [0m17:10:40.369885 [debug] [MainThread]: Flushing usage events
 [0m17:10:41.909317 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:59:09.052482 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EB3E05160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EB0C11450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EB6573C50>]}
+
+
+============================== 11:59:09.057629 | 3cc5ae70-8d0c-423c-af31-cd8a17f12ea5 ==============================
+[0m11:59:09.057629 [info ] [MainThread]: Running with dbt=1.12.0
+[0m11:59:09.058784 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --select cutomers_incremental', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Arjun_dbt_project\\old_dbt_project\\logs'}
+[0m11:59:09.372884 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m11:59:09.373411 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m11:59:09.373745 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m11:59:09.674303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3cc5ae70-8d0c-423c-af31-cd8a17f12ea5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EB44DDE00>]}
+[0m11:59:09.720043 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3cc5ae70-8d0c-423c-af31-cd8a17f12ea5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EB232EF10>]}
+[0m11:59:09.721091 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m11:59:09.976427 [debug] [MainThread]: checksum: 34d064bbf3d7c01e29a022f69428015a75a45641a9d372ee507764c8a4f69675, vars: {}, profile: my_dbt_project, target: dev, version: 1.12.0
+[0m11:59:10.486988 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m11:59:10.487461 [debug] [MainThread]: Partial parsing: added file: my_new_project://models\SCD\customers_incremental.sql
+[0m11:59:10.718513 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3cc5ae70-8d0c-423c-af31-cd8a17f12ea5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EB946E350>]}
+[0m11:59:10.871043 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Arjun_dbt_project\old_dbt_project\target\manifest.json
+[0m11:59:10.884442 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Arjun_dbt_project\old_dbt_project\target\semantic_manifest.json
+[0m11:59:10.979611 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Arjun_dbt_project\old_dbt_project\target\osi_document.json
+[0m11:59:11.037458 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3cc5ae70-8d0c-423c-af31-cd8a17f12ea5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EB9566990>]}
+[0m11:59:11.037893 [info ] [MainThread]: Found 16 models, 2 snapshots, 6 data tests, 8 sources, 548 macros
+[0m11:59:11.038244 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3cc5ae70-8d0c-423c-af31-cd8a17f12ea5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EB9711EF0>]}
+[0m11:59:11.038837 [warn ] [MainThread]: [[33mWARNING[0m]: The selection criterion 'cutomers_incremental' does not match any enabled nodes
+[0m11:59:11.039850 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m11:59:11.040290 [debug] [MainThread]: Command end result
+[0m11:59:11.085603 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Arjun_dbt_project\old_dbt_project\target\manifest.json
+[0m11:59:11.089740 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Arjun_dbt_project\old_dbt_project\target\semantic_manifest.json
+[0m11:59:11.094108 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Arjun_dbt_project\old_dbt_project\target\osi_document.json
+[0m11:59:11.104856 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Arjun_dbt_project\old_dbt_project\target\run_results.json
+[0m11:59:11.105680 [debug] [MainThread]: Command `dbt run` succeeded at 11:59:11.105569 after 2.18 seconds
+[0m11:59:11.105967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EB977D4A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EB621FD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EB97A6750>]}
+[0m11:59:11.106218 [debug] [MainThread]: Flushing usage events
+[0m11:59:12.522671 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:59:24.884309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238FB6C5160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238F8591450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238FDE23C50>]}
+
+
+============================== 11:59:24.887466 | 58c79047-f789-4831-b73e-a8f910274439 ==============================
+[0m11:59:24.887466 [info ] [MainThread]: Running with dbt=1.12.0
+[0m11:59:24.887969 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --select customers_incremental', 'log_path': 'C:\\Arjun_dbt_project\\old_dbt_project\\logs'}
+[0m11:59:25.204241 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m11:59:25.204701 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m11:59:25.204941 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m11:59:25.397649 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '58c79047-f789-4831-b73e-a8f910274439', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238FBD8DE00>]}
+[0m11:59:25.445481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '58c79047-f789-4831-b73e-a8f910274439', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238F9BEEF10>]}
+[0m11:59:25.446744 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m11:59:25.647603 [debug] [MainThread]: checksum: 34d064bbf3d7c01e29a022f69428015a75a45641a9d372ee507764c8a4f69675, vars: {}, profile: my_dbt_project, target: dev, version: 1.12.0
+[0m11:59:25.805119 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:59:25.805413 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m11:59:25.805627 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:59:25.812120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '58c79047-f789-4831-b73e-a8f910274439', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238FFE1A550>]}
+[0m11:59:25.962680 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Arjun_dbt_project\old_dbt_project\target\manifest.json
+[0m11:59:25.966990 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Arjun_dbt_project\old_dbt_project\target\semantic_manifest.json
+[0m11:59:25.984771 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Arjun_dbt_project\old_dbt_project\target\osi_document.json
+[0m11:59:26.009388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '58c79047-f789-4831-b73e-a8f910274439', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238FFEE9D60>]}
+[0m11:59:26.010207 [info ] [MainThread]: Found 16 models, 2 snapshots, 6 data tests, 8 sources, 548 macros
+[0m11:59:26.010904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '58c79047-f789-4831-b73e-a8f910274439', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238FFFAD7F0>]}
+[0m11:59:26.012376 [info ] [MainThread]: 
+[0m11:59:26.012683 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:59:26.013045 [info ] [MainThread]: 
+[0m11:59:26.013565 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:59:26.014326 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_PRACTICE'
+[0m11:59:26.028126 [debug] [ThreadPool]: Using snowflake connection "list_DBT_PRACTICE"
+[0m11:59:26.028511 [debug] [ThreadPool]: On list_DBT_PRACTICE: show terse schemas in database DBT_PRACTICE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DBT_PRACTICE"} */
+[0m11:59:26.028736 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:59:35.898389 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 9.869 seconds
+[0m11:59:35.917285 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DSP_PROJ_STAGING'
+[0m11:59:35.925641 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DSP_PROJ_MARTS'
+[0m11:59:35.927880 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_STAGING"
+[0m11:59:35.928900 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MARTS"
+[0m11:59:35.929299 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DSP_PROJ_MART'
+[0m11:59:35.929676 [debug] [ThreadPool]: On list_DSP_PROJ_STAGING: show objects in DSP_PROJ.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_STAGING"} */;
+[0m11:59:35.929930 [debug] [ThreadPool]: On list_DSP_PROJ_MARTS: show objects in DSP_PROJ.MARTS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MARTS"} */;
+[0m11:59:35.930814 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MART"
+[0m11:59:35.931121 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_PRACTICE_SNAPSHOTS'
+[0m11:59:35.931386 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:59:35.931586 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:59:35.931800 [debug] [ThreadPool]: On list_DSP_PROJ_MART: show objects in DSP_PROJ.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MART"} */;
+[0m11:59:35.932879 [debug] [ThreadPool]: Using snowflake connection "list_DBT_PRACTICE_SNAPSHOTS"
+[0m11:59:35.933279 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:59:35.933501 [debug] [ThreadPool]: On list_DBT_PRACTICE_SNAPSHOTS: show objects in DBT_PRACTICE.SNAPSHOTS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DBT_PRACTICE_SNAPSHOTS"} */;
+[0m11:59:35.934265 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:59:37.652815 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.719 seconds
+[0m11:59:37.657381 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MART"
+[0m11:59:37.657938 [debug] [ThreadPool]: On list_DSP_PROJ_MART: show user functions in DSP_PROJ.MART
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MART"} */
+[0m11:59:37.887419 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.956 seconds
+[0m11:59:37.896048 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MARTS"
+[0m11:59:37.897356 [debug] [ThreadPool]: On list_DSP_PROJ_MARTS: show user functions in DSP_PROJ.MARTS
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MARTS"} */
+[0m11:59:37.931065 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.997 seconds
+[0m11:59:37.934480 [debug] [ThreadPool]: Using snowflake connection "list_DBT_PRACTICE_SNAPSHOTS"
+[0m11:59:37.934912 [debug] [ThreadPool]: On list_DBT_PRACTICE_SNAPSHOTS: show user functions in DBT_PRACTICE.SNAPSHOTS
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DBT_PRACTICE_SNAPSHOTS"} */
+[0m11:59:37.935987 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 2.005 seconds
+[0m11:59:37.938514 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_STAGING"
+[0m11:59:37.938805 [debug] [ThreadPool]: On list_DSP_PROJ_STAGING: show user functions in DSP_PROJ.STAGING
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_STAGING"} */
+[0m11:59:37.985518 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.327 seconds
+[0m11:59:37.987191 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DSP_PROJ_MART, now list_DSP_PROJ_INTERMEDIATE)
+[0m11:59:37.988737 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_INTERMEDIATE"
+[0m11:59:37.988965 [debug] [ThreadPool]: On list_DSP_PROJ_INTERMEDIATE: show objects in DSP_PROJ.INTERMEDIATE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_INTERMEDIATE"} */;
+[0m11:59:38.235991 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.337 seconds
+[0m11:59:38.288119 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.353 seconds
+[0m11:59:38.292499 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.353 seconds
+[0m11:59:38.464533 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.475 seconds
+[0m11:59:38.468815 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_INTERMEDIATE"
+[0m11:59:38.469183 [debug] [ThreadPool]: On list_DSP_PROJ_INTERMEDIATE: show user functions in DSP_PROJ.INTERMEDIATE
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_INTERMEDIATE"} */
+[0m11:59:38.815179 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.346 seconds
+[0m11:59:38.820833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '58c79047-f789-4831-b73e-a8f910274439', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238810CF2B0>]}
+[0m11:59:38.835991 [debug] [Thread-2 (]: Began running node model.my_new_project.customers_incremental
+[0m11:59:38.836416 [info ] [Thread-2 (]: 1 of 1 START sql incremental model SNAPSHOTS.customers_incremental ............. [RUN]
+[0m11:59:38.836923 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.my_new_project.customers_incremental'
+[0m11:59:38.837170 [debug] [Thread-2 (]: Began compiling node model.my_new_project.customers_incremental
+[0m11:59:38.845218 [debug] [Thread-2 (]: Writing injected SQL for node "model.my_new_project.customers_incremental"
+[0m11:59:38.866465 [debug] [Thread-2 (]: Began executing node model.my_new_project.customers_incremental
+[0m11:59:38.917942 [debug] [Thread-2 (]: Writing runtime sql for node "model.my_new_project.customers_incremental"
+[0m11:59:38.922642 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m11:59:38.922968 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: create or replace transient table DBT_PRACTICE.SNAPSHOTS.customers_incremental
+    
+    
+    
+    
+    
+
+    as (
+
+select
+
+customer_id,
+
+customer_name,
+
+city,
+
+updated_at
+
+from DBT_PRACTICE.RAW.CUSTOMERS
+    )
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */;
+[0m11:59:38.923192 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m11:59:41.458054 [debug] [Thread-2 (]: SQL status: SUCCESS 4 in 2.534 seconds
+[0m11:59:41.467826 [debug] [Thread-2 (]: Applying DROP to: DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp
+[0m11:59:41.471371 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m11:59:41.471617 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: drop view if exists DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m11:59:41.945928 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.474 seconds
+[0m11:59:41.974399 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '58c79047-f789-4831-b73e-a8f910274439', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238811B68D0>]}
+[0m11:59:41.975487 [info ] [Thread-2 (]: 1 of 1 OK created sql incremental model SNAPSHOTS.customers_incremental ........ [[32mSUCCESS 4[0m in 3.13s]
+[0m11:59:41.976404 [debug] [Thread-2 (]: Finished running node model.my_new_project.customers_incremental
+[0m11:59:41.977891 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:59:41.978108 [debug] [MainThread]: Connection 'list_DBT_PRACTICE' was left open.
+[0m11:59:41.978283 [debug] [MainThread]: On list_DBT_PRACTICE: Close
+[0m11:59:42.798415 [debug] [MainThread]: Connection 'list_DSP_PROJ_STAGING' was left open.
+[0m11:59:42.798787 [debug] [MainThread]: On list_DSP_PROJ_STAGING: Close
+[0m11:59:43.477719 [debug] [MainThread]: Connection 'list_DSP_PROJ_MARTS' was left open.
+[0m11:59:43.478317 [debug] [MainThread]: On list_DSP_PROJ_MARTS: Close
+[0m11:59:44.201453 [debug] [MainThread]: Connection 'list_DSP_PROJ_INTERMEDIATE' was left open.
+[0m11:59:44.201824 [debug] [MainThread]: On list_DSP_PROJ_INTERMEDIATE: Close
+[0m11:59:44.871521 [debug] [MainThread]: Connection 'list_DBT_PRACTICE_SNAPSHOTS' was left open.
+[0m11:59:44.871935 [debug] [MainThread]: On list_DBT_PRACTICE_SNAPSHOTS: Close
+[0m11:59:45.347591 [debug] [MainThread]: Connection 'model.my_new_project.customers_incremental' was left open.
+[0m11:59:45.348079 [debug] [MainThread]: On model.my_new_project.customers_incremental: Close
+[0m11:59:45.850449 [info ] [MainThread]: 
+[0m11:59:45.851078 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 19.84 seconds (19.84s).
+[0m11:59:45.851780 [debug] [MainThread]: Command end result
+[0m11:59:45.904258 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Arjun_dbt_project\old_dbt_project\target\manifest.json
+[0m11:59:45.914189 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Arjun_dbt_project\old_dbt_project\target\semantic_manifest.json
+[0m11:59:45.920328 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Arjun_dbt_project\old_dbt_project\target\osi_document.json
+[0m11:59:45.935067 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Arjun_dbt_project\old_dbt_project\target\run_results.json
+[0m11:59:45.935563 [info ] [MainThread]: 
+[0m11:59:45.936411 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:59:45.937307 [info ] [MainThread]: 
+[0m11:59:45.937828 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m11:59:45.939684 [debug] [MainThread]: Command `dbt run` succeeded at 11:59:45.939525 after 21.16 seconds
+[0m11:59:45.940300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238811A73E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023881074550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023881074A50>]}
+[0m11:59:45.940802 [debug] [MainThread]: Flushing usage events
+[0m11:59:47.521064 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:11:09.603775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022E1E645160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022E1B451450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022E20DB3C50>]}
+
+
+============================== 12:11:09.614903 | a86ad56f-f6fc-4b79-9571-5c9231aeecb4 ==============================
+[0m12:11:09.614903 [info ] [MainThread]: Running with dbt=1.12.0
+[0m12:11:09.616077 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run --select customers_incremental', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Arjun_dbt_project\\old_dbt_project\\logs'}
+[0m12:11:10.403283 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m12:11:10.404269 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m12:11:10.404531 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m12:11:10.727315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a86ad56f-f6fc-4b79-9571-5c9231aeecb4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022E1ED1DE00>]}
+[0m12:11:10.774663 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a86ad56f-f6fc-4b79-9571-5c9231aeecb4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022E1CB6EF10>]}
+[0m12:11:10.776488 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m12:11:11.021792 [debug] [MainThread]: checksum: 34d064bbf3d7c01e29a022f69428015a75a45641a9d372ee507764c8a4f69675, vars: {}, profile: my_dbt_project, target: dev, version: 1.12.0
+[0m12:11:11.193291 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:11:11.193594 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m12:11:11.193780 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:11:11.200896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a86ad56f-f6fc-4b79-9571-5c9231aeecb4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022E22D1A550>]}
+[0m12:11:11.350652 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Arjun_dbt_project\old_dbt_project\target\manifest.json
+[0m12:11:11.356093 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Arjun_dbt_project\old_dbt_project\target\semantic_manifest.json
+[0m12:11:11.388053 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Arjun_dbt_project\old_dbt_project\target\osi_document.json
+[0m12:11:11.428953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a86ad56f-f6fc-4b79-9571-5c9231aeecb4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022E23DB9D60>]}
+[0m12:11:11.429398 [info ] [MainThread]: Found 16 models, 2 snapshots, 6 data tests, 8 sources, 548 macros
+[0m12:11:11.429718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a86ad56f-f6fc-4b79-9571-5c9231aeecb4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022E23E7D7F0>]}
+[0m12:11:11.431359 [info ] [MainThread]: 
+[0m12:11:11.431718 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:11:11.432016 [info ] [MainThread]: 
+[0m12:11:11.432434 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:11:11.433351 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_PRACTICE'
+[0m12:11:11.447563 [debug] [ThreadPool]: Using snowflake connection "list_DBT_PRACTICE"
+[0m12:11:11.447913 [debug] [ThreadPool]: On list_DBT_PRACTICE: show terse schemas in database DBT_PRACTICE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DBT_PRACTICE"} */
+[0m12:11:11.448288 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:11:13.187542 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 1.739 seconds
+[0m12:11:13.197554 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DSP_PROJ_MART'
+[0m12:11:13.207567 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MART"
+[0m12:11:13.208060 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DSP_PROJ_MARTS'
+[0m12:11:13.208449 [debug] [ThreadPool]: On list_DSP_PROJ_MART: show objects in DSP_PROJ.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MART"} */;
+[0m12:11:13.210987 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MARTS"
+[0m12:11:13.211433 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DSP_PROJ_STAGING'
+[0m12:11:13.211740 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:11:13.212274 [debug] [ThreadPool]: On list_DSP_PROJ_MARTS: show objects in DSP_PROJ.MARTS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MARTS"} */;
+[0m12:11:13.212758 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_PRACTICE_SNAPSHOTS'
+[0m12:11:13.214426 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_STAGING"
+[0m12:11:13.215055 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:11:13.216458 [debug] [ThreadPool]: Using snowflake connection "list_DBT_PRACTICE_SNAPSHOTS"
+[0m12:11:13.216927 [debug] [ThreadPool]: On list_DSP_PROJ_STAGING: show objects in DSP_PROJ.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_STAGING"} */;
+[0m12:11:13.218255 [debug] [ThreadPool]: On list_DBT_PRACTICE_SNAPSHOTS: show objects in DBT_PRACTICE.SNAPSHOTS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DBT_PRACTICE_SNAPSHOTS"} */;
+[0m12:11:13.218535 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:11:13.219007 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:11:14.661057 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.446 seconds
+[0m12:11:14.666388 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MARTS"
+[0m12:11:14.666672 [debug] [ThreadPool]: On list_DSP_PROJ_MARTS: show user functions in DSP_PROJ.MARTS
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MARTS"} */
+[0m12:11:14.667647 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.449 seconds
+[0m12:11:14.669154 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_STAGING"
+[0m12:11:14.669383 [debug] [ThreadPool]: On list_DSP_PROJ_STAGING: show user functions in DSP_PROJ.STAGING
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_STAGING"} */
+[0m12:11:14.670098 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.451 seconds
+[0m12:11:14.671503 [debug] [ThreadPool]: Using snowflake connection "list_DBT_PRACTICE_SNAPSHOTS"
+[0m12:11:14.671723 [debug] [ThreadPool]: On list_DBT_PRACTICE_SNAPSHOTS: show user functions in DBT_PRACTICE.SNAPSHOTS
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DBT_PRACTICE_SNAPSHOTS"} */
+[0m12:11:15.008910 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.337 seconds
+[0m12:11:15.011585 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT_PRACTICE_SNAPSHOTS, now list_DSP_PROJ_INTERMEDIATE)
+[0m12:11:15.012510 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.346 seconds
+[0m12:11:15.015775 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_INTERMEDIATE"
+[0m12:11:15.018691 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.349 seconds
+[0m12:11:15.018998 [debug] [ThreadPool]: On list_DSP_PROJ_INTERMEDIATE: show objects in DSP_PROJ.INTERMEDIATE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_INTERMEDIATE"} */;
+[0m12:11:15.587989 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.566 seconds
+[0m12:11:15.591088 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_INTERMEDIATE"
+[0m12:11:15.591398 [debug] [ThreadPool]: On list_DSP_PROJ_INTERMEDIATE: show user functions in DSP_PROJ.INTERMEDIATE
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_INTERMEDIATE"} */
+[0m12:11:15.634499 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 2.423 seconds
+[0m12:11:15.637617 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MART"
+[0m12:11:15.637822 [debug] [ThreadPool]: On list_DSP_PROJ_MART: show user functions in DSP_PROJ.MART
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MART"} */
+[0m12:11:15.931554 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.340 seconds
+[0m12:11:15.998099 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.360 seconds
+[0m12:11:16.004506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a86ad56f-f6fc-4b79-9571-5c9231aeecb4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022E23E83380>]}
+[0m12:11:16.011745 [debug] [Thread-2 (]: Began running node model.my_new_project.customers_incremental
+[0m12:11:16.012215 [info ] [Thread-2 (]: 1 of 1 START sql incremental model SNAPSHOTS.customers_incremental ............. [RUN]
+[0m12:11:16.013041 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.my_new_project.customers_incremental'
+[0m12:11:16.013408 [debug] [Thread-2 (]: Began compiling node model.my_new_project.customers_incremental
+[0m12:11:16.018555 [debug] [Thread-2 (]: Writing injected SQL for node "model.my_new_project.customers_incremental"
+[0m12:11:16.021915 [debug] [Thread-2 (]: Began executing node model.my_new_project.customers_incremental
+[0m12:11:16.067727 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:11:16.068074 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: create or replace  temporary view DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp
+  
+  
+  
+  
+  as (
+    
+
+select
+
+customer_id,
+
+customer_name,
+
+city,
+
+updated_at
+
+from DBT_PRACTICE.RAW.CUSTOMERS
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */;
+[0m12:11:16.068292 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m12:11:17.719451 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.651 seconds
+[0m12:11:17.724400 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:11:17.724776 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: describe table DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:11:18.056156 [debug] [Thread-2 (]: SQL status: SUCCESS 4 in 0.331 seconds
+[0m12:11:18.063952 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:11:18.064465 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: describe table DBT_PRACTICE.SNAPSHOTS.customers_incremental
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:11:18.871197 [debug] [Thread-2 (]: SQL status: SUCCESS 4 in 0.806 seconds
+[0m12:11:18.879561 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:11:18.879902 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: describe table "DBT_PRACTICE"."SNAPSHOTS"."CUSTOMERS_INCREMENTAL"
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:11:19.413214 [debug] [Thread-2 (]: SQL status: SUCCESS 4 in 0.533 seconds
+[0m12:11:19.439237 [debug] [Thread-2 (]: Writing runtime sql for node "model.my_new_project.customers_incremental"
+[0m12:11:19.443811 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:11:19.444318 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */;
+[0m12:11:19.871779 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.427 seconds
+[0m12:11:19.872383 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:11:19.872826 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: merge into DBT_PRACTICE.SNAPSHOTS.customers_incremental as DBT_INTERNAL_DEST
+        using DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.customer_id = DBT_INTERNAL_DEST.customer_id))
+
+    
+    when matched then update set
+        "CUSTOMER_ID" = DBT_INTERNAL_SOURCE."CUSTOMER_ID","CUSTOMER_NAME" = DBT_INTERNAL_SOURCE."CUSTOMER_NAME","CITY" = DBT_INTERNAL_SOURCE."CITY","UPDATED_AT" = DBT_INTERNAL_SOURCE."UPDATED_AT"
+    
+
+    when not matched then insert
+        ("CUSTOMER_ID", "CUSTOMER_NAME", "CITY", "UPDATED_AT")
+    values
+        ("CUSTOMER_ID", "CUSTOMER_NAME", "CITY", "UPDATED_AT")
+
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */;
+[0m12:11:21.014326 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.141 seconds
+[0m12:11:21.015760 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:11:21.017588 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: COMMIT
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:11:21.665147 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.647 seconds
+[0m12:11:21.670658 [debug] [Thread-2 (]: Applying DROP to: DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp
+[0m12:11:21.674447 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:11:21.674740 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: drop view if exists DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:11:22.236801 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.562 seconds
+[0m12:11:22.254184 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a86ad56f-f6fc-4b79-9571-5c9231aeecb4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022E240E7F50>]}
+[0m12:11:22.254697 [info ] [Thread-2 (]: 1 of 1 OK created sql incremental model SNAPSHOTS.customers_incremental ........ [[32mSUCCESS 1[0m in 6.24s]
+[0m12:11:22.255337 [debug] [Thread-2 (]: Finished running node model.my_new_project.customers_incremental
+[0m12:11:22.256455 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:11:22.256666 [debug] [MainThread]: Connection 'list_DBT_PRACTICE' was left open.
+[0m12:11:22.256853 [debug] [MainThread]: On list_DBT_PRACTICE: Close
+[0m12:11:23.097610 [debug] [MainThread]: Connection 'list_DSP_PROJ_MART' was left open.
+[0m12:11:23.098009 [debug] [MainThread]: On list_DSP_PROJ_MART: Close
+[0m12:11:23.638173 [debug] [MainThread]: Connection 'list_DSP_PROJ_MARTS' was left open.
+[0m12:11:23.638988 [debug] [MainThread]: On list_DSP_PROJ_MARTS: Close
+[0m12:11:24.224764 [debug] [MainThread]: Connection 'list_DSP_PROJ_STAGING' was left open.
+[0m12:11:24.225091 [debug] [MainThread]: On list_DSP_PROJ_STAGING: Close
+[0m12:11:24.925463 [debug] [MainThread]: Connection 'list_DSP_PROJ_INTERMEDIATE' was left open.
+[0m12:11:24.927021 [debug] [MainThread]: On list_DSP_PROJ_INTERMEDIATE: Close
+[0m12:11:25.580124 [debug] [MainThread]: Connection 'model.my_new_project.customers_incremental' was left open.
+[0m12:11:25.580455 [debug] [MainThread]: On model.my_new_project.customers_incremental: Close
+[0m12:11:26.103977 [info ] [MainThread]: 
+[0m12:11:26.112366 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 14.67 seconds (14.67s).
+[0m12:11:26.113681 [debug] [MainThread]: Command end result
+[0m12:11:26.203533 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Arjun_dbt_project\old_dbt_project\target\manifest.json
+[0m12:11:26.211727 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Arjun_dbt_project\old_dbt_project\target\semantic_manifest.json
+[0m12:11:26.216856 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Arjun_dbt_project\old_dbt_project\target\osi_document.json
+[0m12:11:26.225838 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Arjun_dbt_project\old_dbt_project\target\run_results.json
+[0m12:11:26.226279 [info ] [MainThread]: 
+[0m12:11:26.226835 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:11:26.227275 [info ] [MainThread]: 
+[0m12:11:26.227686 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m12:11:26.228427 [debug] [MainThread]: Command `dbt run` succeeded at 12:11:26.228331 after 16.77 seconds
+[0m12:11:26.228849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022E23E78730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022E241A3250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022E241A2E90>]}
+[0m12:11:26.229127 [debug] [MainThread]: Flushing usage events
+[0m12:11:27.848457 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:17:35.277047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025AEF605160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025AEC481450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025AF1D63C50>]}
+
+
+============================== 12:17:35.280122 | 2e4ffbc7-b678-4479-a061-70d98f35c2ab ==============================
+[0m12:17:35.280122 [info ] [MainThread]: Running with dbt=1.12.0
+[0m12:17:35.280669 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --select customers_incremental', 'log_path': 'C:\\Arjun_dbt_project\\old_dbt_project\\logs'}
+[0m12:17:35.593637 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m12:17:35.594108 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m12:17:35.594372 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m12:17:35.794918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2e4ffbc7-b678-4479-a061-70d98f35c2ab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025AEFCD5E00>]}
+[0m12:17:35.839639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2e4ffbc7-b678-4479-a061-70d98f35c2ab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025AEDB2EF10>]}
+[0m12:17:35.840683 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m12:17:36.049680 [debug] [MainThread]: checksum: 34d064bbf3d7c01e29a022f69428015a75a45641a9d372ee507764c8a4f69675, vars: {}, profile: my_dbt_project, target: dev, version: 1.12.0
+[0m12:17:36.187155 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m12:17:36.187647 [debug] [MainThread]: Partial parsing: updated file: my_new_project://models\SCD\customers_incremental.sql
+[0m12:17:36.432025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2e4ffbc7-b678-4479-a061-70d98f35c2ab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025AF4C4A450>]}
+[0m12:17:36.533790 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Arjun_dbt_project\old_dbt_project\target\manifest.json
+[0m12:17:36.537967 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Arjun_dbt_project\old_dbt_project\target\semantic_manifest.json
+[0m12:17:36.555597 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Arjun_dbt_project\old_dbt_project\target\osi_document.json
+[0m12:17:36.575111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2e4ffbc7-b678-4479-a061-70d98f35c2ab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025AF4D1AC60>]}
+[0m12:17:36.575650 [info ] [MainThread]: Found 16 models, 2 snapshots, 6 data tests, 8 sources, 548 macros
+[0m12:17:36.576145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2e4ffbc7-b678-4479-a061-70d98f35c2ab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025AF4ED5010>]}
+[0m12:17:36.577482 [info ] [MainThread]: 
+[0m12:17:36.577783 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:17:36.578037 [info ] [MainThread]: 
+[0m12:17:36.578447 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:17:36.579139 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_PRACTICE'
+[0m12:17:36.587322 [debug] [ThreadPool]: Using snowflake connection "list_DBT_PRACTICE"
+[0m12:17:36.587547 [debug] [ThreadPool]: On list_DBT_PRACTICE: show terse schemas in database DBT_PRACTICE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DBT_PRACTICE"} */
+[0m12:17:36.587719 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:17:38.397813 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 1.810 seconds
+[0m12:17:38.403481 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DSP_PROJ_INTERMEDIATE'
+[0m12:17:38.413516 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_INTERMEDIATE"
+[0m12:17:38.413814 [debug] [ThreadPool]: On list_DSP_PROJ_INTERMEDIATE: show objects in DSP_PROJ.INTERMEDIATE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_INTERMEDIATE"} */;
+[0m12:17:38.414021 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:17:38.414668 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DSP_PROJ_MART'
+[0m12:17:38.415690 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MART"
+[0m12:17:38.416016 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_PRACTICE_SNAPSHOTS'
+[0m12:17:38.416208 [debug] [ThreadPool]: On list_DSP_PROJ_MART: show objects in DSP_PROJ.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MART"} */;
+[0m12:17:38.417309 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DSP_PROJ_MARTS'
+[0m12:17:38.418180 [debug] [ThreadPool]: Using snowflake connection "list_DBT_PRACTICE_SNAPSHOTS"
+[0m12:17:38.418402 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:17:38.419166 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MARTS"
+[0m12:17:38.419396 [debug] [ThreadPool]: On list_DBT_PRACTICE_SNAPSHOTS: show objects in DBT_PRACTICE.SNAPSHOTS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DBT_PRACTICE_SNAPSHOTS"} */;
+[0m12:17:38.420397 [debug] [ThreadPool]: On list_DSP_PROJ_MARTS: show objects in DSP_PROJ.MARTS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MARTS"} */;
+[0m12:17:38.420773 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:17:38.421413 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:17:39.611570 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.190 seconds
+[0m12:17:39.620384 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MARTS"
+[0m12:17:39.620622 [debug] [ThreadPool]: On list_DSP_PROJ_MARTS: show user functions in DSP_PROJ.MARTS
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MARTS"} */
+[0m12:17:39.813249 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.399 seconds
+[0m12:17:39.815028 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_INTERMEDIATE"
+[0m12:17:39.815242 [debug] [ThreadPool]: On list_DSP_PROJ_INTERMEDIATE: show user functions in DSP_PROJ.INTERMEDIATE
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_INTERMEDIATE"} */
+[0m12:17:39.839967 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.421 seconds
+[0m12:17:39.842708 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MART"
+[0m12:17:39.843078 [debug] [ThreadPool]: On list_DSP_PROJ_MART: show user functions in DSP_PROJ.MART
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MART"} */
+[0m12:17:39.953713 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.333 seconds
+[0m12:17:39.954981 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DSP_PROJ_MARTS, now list_DSP_PROJ_STAGING)
+[0m12:17:39.956588 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_STAGING"
+[0m12:17:39.956804 [debug] [ThreadPool]: On list_DSP_PROJ_STAGING: show objects in DSP_PROJ.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_STAGING"} */;
+[0m12:17:40.080711 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.660 seconds
+[0m12:17:40.084951 [debug] [ThreadPool]: Using snowflake connection "list_DBT_PRACTICE_SNAPSHOTS"
+[0m12:17:40.085332 [debug] [ThreadPool]: On list_DBT_PRACTICE_SNAPSHOTS: show user functions in DBT_PRACTICE.SNAPSHOTS
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DBT_PRACTICE_SNAPSHOTS"} */
+[0m12:17:40.166819 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.351 seconds
+[0m12:17:40.169518 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.326 seconds
+[0m12:17:40.280161 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.323 seconds
+[0m12:17:40.281914 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_STAGING"
+[0m12:17:40.282225 [debug] [ThreadPool]: On list_DSP_PROJ_STAGING: show user functions in DSP_PROJ.STAGING
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_STAGING"} */
+[0m12:17:40.449665 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.364 seconds
+[0m12:17:40.631044 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.348 seconds
+[0m12:17:40.638770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2e4ffbc7-b678-4479-a061-70d98f35c2ab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025AF50528F0>]}
+[0m12:17:40.643905 [debug] [Thread-2 (]: Began running node model.my_new_project.customers_incremental
+[0m12:17:40.644384 [info ] [Thread-2 (]: 1 of 1 START sql incremental model SNAPSHOTS.customers_incremental ............. [RUN]
+[0m12:17:40.645097 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.my_new_project.customers_incremental'
+[0m12:17:40.645401 [debug] [Thread-2 (]: Began compiling node model.my_new_project.customers_incremental
+[0m12:17:40.652913 [debug] [Thread-2 (]: Writing injected SQL for node "model.my_new_project.customers_incremental"
+[0m12:17:40.659084 [debug] [Thread-2 (]: Began executing node model.my_new_project.customers_incremental
+[0m12:17:40.699114 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:17:40.699471 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: create or replace  temporary view DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp
+  
+  
+  
+  
+  as (
+    
+
+
+
+select
+
+customer_id,
+
+customer_name,
+
+city,
+
+updated_at
+
+from DBT_PRACTICE.RAW.CUSTOMERS
+
+
+
+where updated_at > (select max(updated_at) from DBT_PRACTICE.SNAPSHOTS.customers_incremental)
+
+
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */;
+[0m12:17:40.699716 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m12:17:41.987893 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.288 seconds
+[0m12:17:41.996923 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:17:41.997425 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: describe table DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:17:42.444390 [debug] [Thread-2 (]: SQL status: SUCCESS 4 in 0.446 seconds
+[0m12:17:42.452006 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:17:42.452352 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: describe table DBT_PRACTICE.SNAPSHOTS.customers_incremental
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:17:42.775712 [debug] [Thread-2 (]: SQL status: SUCCESS 4 in 0.323 seconds
+[0m12:17:42.783492 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:17:42.783811 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: describe table "DBT_PRACTICE"."SNAPSHOTS"."CUSTOMERS_INCREMENTAL"
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:17:43.178463 [debug] [Thread-2 (]: SQL status: SUCCESS 4 in 0.394 seconds
+[0m12:17:43.201244 [debug] [Thread-2 (]: Writing runtime sql for node "model.my_new_project.customers_incremental"
+[0m12:17:43.204501 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:17:43.204806 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */;
+[0m12:17:43.516229 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.311 seconds
+[0m12:17:43.517208 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:17:43.518182 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: merge into DBT_PRACTICE.SNAPSHOTS.customers_incremental as DBT_INTERNAL_DEST
+        using DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.customer_id = DBT_INTERNAL_DEST.customer_id))
+
+    
+    when matched then update set
+        "CUSTOMER_ID" = DBT_INTERNAL_SOURCE."CUSTOMER_ID","CUSTOMER_NAME" = DBT_INTERNAL_SOURCE."CUSTOMER_NAME","CITY" = DBT_INTERNAL_SOURCE."CITY","UPDATED_AT" = DBT_INTERNAL_SOURCE."UPDATED_AT"
+    
+
+    when not matched then insert
+        ("CUSTOMER_ID", "CUSTOMER_NAME", "CITY", "UPDATED_AT")
+    values
+        ("CUSTOMER_ID", "CUSTOMER_NAME", "CITY", "UPDATED_AT")
+
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */;
+[0m12:17:44.636983 [debug] [Thread-2 (]: SQL status: SUCCESS 0 in 1.118 seconds
+[0m12:17:44.638115 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:17:44.638738 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: COMMIT
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:17:45.231117 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.591 seconds
+[0m12:17:45.236957 [debug] [Thread-2 (]: Applying DROP to: DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp
+[0m12:17:45.242400 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:17:45.242887 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: drop view if exists DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:17:45.547423 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.304 seconds
+[0m12:17:45.550554 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:17:45.550816 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: delete from DBT_PRACTICE.SNAPSHOTS.customers_incremental t where 
+not exist ( select 1 from DBT_PRACTICE.RAW.CUSTOMERS s
+where s.customer_id = t.customer_id and
+t.updated_at < (select max(updated_at) from DBT_PRACTICE.SNAPSHOTS.customers_incremental)
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:17:45.992029 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01c65b57-0104-6848-0004-f1ee001643ea
+[0m12:17:45.992367 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 2 at position 12 unexpected 'select'.
+[0m12:17:46.013042 [debug] [Thread-2 (]: Database Error in model customers_incremental (models\SCD\customers_incremental.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 2 at position 12 unexpected 'select'.
+  compiled code at target\run\my_new_project\models\SCD\customers_incremental.sql
+[0m12:17:46.014501 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e4ffbc7-b678-4479-a061-70d98f35c2ab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025AF51381D0>]}
+[0m12:17:46.014934 [error] [Thread-2 (]: 1 of 1 ERROR creating sql incremental model SNAPSHOTS.customers_incremental .... [[31mERROR[0m in 5.37s]
+[0m12:17:46.015527 [debug] [Thread-2 (]: Finished running node model.my_new_project.customers_incremental
+[0m12:17:46.015857 [debug] [Thread-8 (]: Marking all children of 'model.my_new_project.customers_incremental' to be skipped because of status 'error'.  Reason: Database Error in model customers_incremental (models\SCD\customers_incremental.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 2 at position 12 unexpected 'select'.
+  compiled code at target\run\my_new_project\models\SCD\customers_incremental.sql.
+[0m12:17:46.017880 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:17:46.018088 [debug] [MainThread]: Connection 'list_DBT_PRACTICE' was left open.
+[0m12:17:46.018269 [debug] [MainThread]: On list_DBT_PRACTICE: Close
+[0m12:17:47.088011 [debug] [MainThread]: Connection 'list_DSP_PROJ_INTERMEDIATE' was left open.
+[0m12:17:47.088587 [debug] [MainThread]: On list_DSP_PROJ_INTERMEDIATE: Close
+[0m12:17:47.822864 [debug] [MainThread]: Connection 'list_DSP_PROJ_MART' was left open.
+[0m12:17:47.823209 [debug] [MainThread]: On list_DSP_PROJ_MART: Close
+[0m12:17:48.373533 [debug] [MainThread]: Connection 'list_DBT_PRACTICE_SNAPSHOTS' was left open.
+[0m12:17:48.374583 [debug] [MainThread]: On list_DBT_PRACTICE_SNAPSHOTS: Close
+[0m12:17:49.051713 [debug] [MainThread]: Connection 'list_DSP_PROJ_STAGING' was left open.
+[0m12:17:49.052077 [debug] [MainThread]: On list_DSP_PROJ_STAGING: Close
+[0m12:17:49.571560 [debug] [MainThread]: Connection 'model.my_new_project.customers_incremental' was left open.
+[0m12:17:49.572181 [debug] [MainThread]: On model.my_new_project.customers_incremental: Close
+[0m12:17:50.136314 [info ] [MainThread]: 
+[0m12:17:50.136951 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 13.56 seconds (13.56s).
+[0m12:17:50.137651 [debug] [MainThread]: Command end result
+[0m12:17:50.184711 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Arjun_dbt_project\old_dbt_project\target\manifest.json
+[0m12:17:50.189886 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Arjun_dbt_project\old_dbt_project\target\semantic_manifest.json
+[0m12:17:50.194422 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Arjun_dbt_project\old_dbt_project\target\osi_document.json
+[0m12:17:50.202802 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Arjun_dbt_project\old_dbt_project\target\run_results.json
+[0m12:17:50.203095 [info ] [MainThread]: 
+[0m12:17:50.203535 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m12:17:50.203920 [info ] [MainThread]: 
+[0m12:17:50.204243 [error] [MainThread]: [[31mERROR[0m]: in model customers_incremental (models\SCD\customers_incremental.sql)
+[0m12:17:50.204518 [error] [MainThread]:   Database Error in model customers_incremental (models\SCD\customers_incremental.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 2 at position 12 unexpected 'select'.
+  compiled code at target\run\my_new_project\models\SCD\customers_incremental.sql
+[0m12:17:50.204745 [info ] [MainThread]: 
+[0m12:17:50.204988 [info ] [MainThread]:   compiled code at target\compiled\my_new_project\models\SCD\customers_incremental.sql
+[0m12:17:50.205195 [info ] [MainThread]: 
+[0m12:17:50.205430 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m12:17:50.206226 [debug] [MainThread]: Command `dbt run` failed at 12:17:50.206125 after 15.05 seconds
+[0m12:17:50.206504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025AF5060AA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025AF5235C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025AF5235B30>]}
+[0m12:17:50.206748 [debug] [MainThread]: Flushing usage events
+[0m12:17:52.068644 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:19:20.238618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5052A5160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A502111450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A507A03C50>]}
+
+
+============================== 12:19:20.241738 | 06e00cca-bfdf-47de-9d38-9bfc40db42d6 ==============================
+[0m12:19:20.241738 [info ] [MainThread]: Running with dbt=1.12.0
+[0m12:19:20.242237 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run --select customers_incremental', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Arjun_dbt_project\\old_dbt_project\\logs'}
+[0m12:19:20.577764 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m12:19:20.578408 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m12:19:20.578654 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m12:19:20.773741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '06e00cca-bfdf-47de-9d38-9bfc40db42d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A50596DE00>]}
+[0m12:19:20.817402 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '06e00cca-bfdf-47de-9d38-9bfc40db42d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5037CEF10>]}
+[0m12:19:20.818444 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m12:19:21.038572 [debug] [MainThread]: checksum: 34d064bbf3d7c01e29a022f69428015a75a45641a9d372ee507764c8a4f69675, vars: {}, profile: my_dbt_project, target: dev, version: 1.12.0
+[0m12:19:21.182074 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m12:19:21.182638 [debug] [MainThread]: Partial parsing: updated file: my_new_project://models\SCD\customers_incremental.sql
+[0m12:19:21.420988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '06e00cca-bfdf-47de-9d38-9bfc40db42d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A50A98A450>]}
+[0m12:19:21.525615 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Arjun_dbt_project\old_dbt_project\target\manifest.json
+[0m12:19:21.532769 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Arjun_dbt_project\old_dbt_project\target\semantic_manifest.json
+[0m12:19:21.550460 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Arjun_dbt_project\old_dbt_project\target\osi_document.json
+[0m12:19:21.567652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '06e00cca-bfdf-47de-9d38-9bfc40db42d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A50A9C6A80>]}
+[0m12:19:21.568069 [info ] [MainThread]: Found 16 models, 2 snapshots, 6 data tests, 8 sources, 548 macros
+[0m12:19:21.568415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '06e00cca-bfdf-47de-9d38-9bfc40db42d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A50ABF5B70>]}
+[0m12:19:21.569708 [info ] [MainThread]: 
+[0m12:19:21.570032 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:19:21.570293 [info ] [MainThread]: 
+[0m12:19:21.570739 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:19:21.571552 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_PRACTICE'
+[0m12:19:21.580376 [debug] [ThreadPool]: Using snowflake connection "list_DBT_PRACTICE"
+[0m12:19:21.581133 [debug] [ThreadPool]: On list_DBT_PRACTICE: show terse schemas in database DBT_PRACTICE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DBT_PRACTICE"} */
+[0m12:19:21.581770 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:19:24.495435 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 2.914 seconds
+[0m12:19:24.502627 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DSP_PROJ_INTERMEDIATE'
+[0m12:19:24.510574 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_INTERMEDIATE"
+[0m12:19:24.510939 [debug] [ThreadPool]: On list_DSP_PROJ_INTERMEDIATE: show objects in DSP_PROJ.INTERMEDIATE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_INTERMEDIATE"} */;
+[0m12:19:24.511363 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DSP_PROJ_MARTS'
+[0m12:19:24.511599 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:19:24.512836 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MARTS"
+[0m12:19:24.513332 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_PRACTICE_SNAPSHOTS'
+[0m12:19:24.514373 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DSP_PROJ_STAGING'
+[0m12:19:24.514605 [debug] [ThreadPool]: On list_DSP_PROJ_MARTS: show objects in DSP_PROJ.MARTS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MARTS"} */;
+[0m12:19:24.515666 [debug] [ThreadPool]: Using snowflake connection "list_DBT_PRACTICE_SNAPSHOTS"
+[0m12:19:24.516541 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_STAGING"
+[0m12:19:24.517186 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:19:24.517429 [debug] [ThreadPool]: On list_DBT_PRACTICE_SNAPSHOTS: show objects in DBT_PRACTICE.SNAPSHOTS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DBT_PRACTICE_SNAPSHOTS"} */;
+[0m12:19:24.517673 [debug] [ThreadPool]: On list_DSP_PROJ_STAGING: show objects in DSP_PROJ.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_STAGING"} */;
+[0m12:19:24.518136 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:19:24.518341 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:19:26.014166 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.496 seconds
+[0m12:19:26.017866 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_STAGING"
+[0m12:19:26.018105 [debug] [ThreadPool]: On list_DSP_PROJ_STAGING: show user functions in DSP_PROJ.STAGING
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_STAGING"} */
+[0m12:19:26.036980 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.519 seconds
+[0m12:19:26.039381 [debug] [ThreadPool]: Using snowflake connection "list_DBT_PRACTICE_SNAPSHOTS"
+[0m12:19:26.039640 [debug] [ThreadPool]: On list_DBT_PRACTICE_SNAPSHOTS: show user functions in DBT_PRACTICE.SNAPSHOTS
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DBT_PRACTICE_SNAPSHOTS"} */
+[0m12:19:26.040564 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.523 seconds
+[0m12:19:26.042811 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.531 seconds
+[0m12:19:26.042074 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MARTS"
+[0m12:19:26.048257 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_INTERMEDIATE"
+[0m12:19:26.048598 [debug] [ThreadPool]: On list_DSP_PROJ_MARTS: show user functions in DSP_PROJ.MARTS
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MARTS"} */
+[0m12:19:26.049013 [debug] [ThreadPool]: On list_DSP_PROJ_INTERMEDIATE: show user functions in DSP_PROJ.INTERMEDIATE
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_INTERMEDIATE"} */
+[0m12:19:26.344746 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.326 seconds
+[0m12:19:26.346491 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DSP_PROJ_STAGING, now list_DSP_PROJ_MART)
+[0m12:19:26.347871 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MART"
+[0m12:19:26.348234 [debug] [ThreadPool]: On list_DSP_PROJ_MART: show objects in DSP_PROJ.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MART"} */;
+[0m12:19:26.381639 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.332 seconds
+[0m12:19:26.385246 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.345 seconds
+[0m12:19:26.386175 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.337 seconds
+[0m12:19:27.143694 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.795 seconds
+[0m12:19:27.147242 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MART"
+[0m12:19:27.147543 [debug] [ThreadPool]: On list_DSP_PROJ_MART: show user functions in DSP_PROJ.MART
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MART"} */
+[0m12:19:27.515024 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.367 seconds
+[0m12:19:27.517128 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '06e00cca-bfdf-47de-9d38-9bfc40db42d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A50AD92680>]}
+[0m12:19:27.519922 [debug] [Thread-2 (]: Began running node model.my_new_project.customers_incremental
+[0m12:19:27.520308 [info ] [Thread-2 (]: 1 of 1 START sql incremental model SNAPSHOTS.customers_incremental ............. [RUN]
+[0m12:19:27.520795 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.my_new_project.customers_incremental'
+[0m12:19:27.521061 [debug] [Thread-2 (]: Began compiling node model.my_new_project.customers_incremental
+[0m12:19:27.526792 [debug] [Thread-2 (]: Writing injected SQL for node "model.my_new_project.customers_incremental"
+[0m12:19:27.535591 [debug] [Thread-2 (]: Began executing node model.my_new_project.customers_incremental
+[0m12:19:27.594811 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:19:27.595147 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: create or replace  temporary view DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp
+  
+  
+  
+  
+  as (
+    
+
+
+
+select
+
+customer_id,
+
+customer_name,
+
+city,
+
+updated_at
+
+from DBT_PRACTICE.RAW.CUSTOMERS
+
+
+
+where updated_at > (select max(updated_at) from DBT_PRACTICE.SNAPSHOTS.customers_incremental)
+
+
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */;
+[0m12:19:27.595393 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m12:19:28.946699 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.351 seconds
+[0m12:19:28.952458 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:19:28.952746 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: describe table DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:19:29.229893 [debug] [Thread-2 (]: SQL status: SUCCESS 4 in 0.276 seconds
+[0m12:19:29.239230 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:19:29.239541 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: describe table DBT_PRACTICE.SNAPSHOTS.customers_incremental
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:19:29.574740 [debug] [Thread-2 (]: SQL status: SUCCESS 4 in 0.335 seconds
+[0m12:19:29.581805 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:19:29.582082 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: describe table "DBT_PRACTICE"."SNAPSHOTS"."CUSTOMERS_INCREMENTAL"
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:19:29.941503 [debug] [Thread-2 (]: SQL status: SUCCESS 4 in 0.359 seconds
+[0m12:19:29.973706 [debug] [Thread-2 (]: Writing runtime sql for node "model.my_new_project.customers_incremental"
+[0m12:19:29.977193 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:19:29.977512 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */;
+[0m12:19:30.271919 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.294 seconds
+[0m12:19:30.272741 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:19:30.273336 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: merge into DBT_PRACTICE.SNAPSHOTS.customers_incremental as DBT_INTERNAL_DEST
+        using DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.customer_id = DBT_INTERNAL_DEST.customer_id))
+
+    
+    when matched then update set
+        "CUSTOMER_ID" = DBT_INTERNAL_SOURCE."CUSTOMER_ID","CUSTOMER_NAME" = DBT_INTERNAL_SOURCE."CUSTOMER_NAME","CITY" = DBT_INTERNAL_SOURCE."CITY","UPDATED_AT" = DBT_INTERNAL_SOURCE."UPDATED_AT"
+    
+
+    when not matched then insert
+        ("CUSTOMER_ID", "CUSTOMER_NAME", "CITY", "UPDATED_AT")
+    values
+        ("CUSTOMER_ID", "CUSTOMER_NAME", "CITY", "UPDATED_AT")
+
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */;
+[0m12:19:31.084192 [debug] [Thread-2 (]: SQL status: SUCCESS 0 in 0.810 seconds
+[0m12:19:31.084907 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:19:31.085317 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: COMMIT
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:19:31.781374 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.695 seconds
+[0m12:19:31.788797 [debug] [Thread-2 (]: Applying DROP to: DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp
+[0m12:19:31.792595 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:19:31.793124 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: drop view if exists DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:19:32.110969 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.317 seconds
+[0m12:19:32.115468 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:19:32.115893 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: delete from DBT_PRACTICE.SNAPSHOTS.customers_incremental t 
+where 
+not exist ( select 1 from DBT_PRACTICE.RAW.CUSTOMERS s
+where s.customer_id = t.customer_id )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:19:32.468809 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01c65b59-0104-678c-0004-f1ee0015f88e
+[0m12:19:32.469368 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 002139 (02000): SQL compilation error:
+Unknown function EXIST.
+[0m12:19:32.474021 [debug] [Thread-2 (]: Database Error in model customers_incremental (models\SCD\customers_incremental.sql)
+  002139 (02000): SQL compilation error:
+  Unknown function EXIST.
+  compiled code at target\run\my_new_project\models\SCD\customers_incremental.sql
+[0m12:19:32.476194 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '06e00cca-bfdf-47de-9d38-9bfc40db42d6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A50AE77050>]}
+[0m12:19:32.476755 [error] [Thread-2 (]: 1 of 1 ERROR creating sql incremental model SNAPSHOTS.customers_incremental .... [[31mERROR[0m in 4.95s]
+[0m12:19:32.477639 [debug] [Thread-2 (]: Finished running node model.my_new_project.customers_incremental
+[0m12:19:32.478184 [debug] [Thread-8 (]: Marking all children of 'model.my_new_project.customers_incremental' to be skipped because of status 'error'.  Reason: Database Error in model customers_incremental (models\SCD\customers_incremental.sql)
+  002139 (02000): SQL compilation error:
+  Unknown function EXIST.
+  compiled code at target\run\my_new_project\models\SCD\customers_incremental.sql.
+[0m12:19:32.480014 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:19:32.480222 [debug] [MainThread]: Connection 'list_DBT_PRACTICE' was left open.
+[0m12:19:32.480401 [debug] [MainThread]: On list_DBT_PRACTICE: Close
+[0m12:19:33.260880 [debug] [MainThread]: Connection 'list_DSP_PROJ_INTERMEDIATE' was left open.
+[0m12:19:33.261476 [debug] [MainThread]: On list_DSP_PROJ_INTERMEDIATE: Close
+[0m12:19:33.956126 [debug] [MainThread]: Connection 'list_DSP_PROJ_MARTS' was left open.
+[0m12:19:33.956452 [debug] [MainThread]: On list_DSP_PROJ_MARTS: Close
+[0m12:19:34.697453 [debug] [MainThread]: Connection 'list_DBT_PRACTICE_SNAPSHOTS' was left open.
+[0m12:19:34.699301 [debug] [MainThread]: On list_DBT_PRACTICE_SNAPSHOTS: Close
+[0m12:19:35.591670 [debug] [MainThread]: Connection 'list_DSP_PROJ_MART' was left open.
+[0m12:19:35.592366 [debug] [MainThread]: On list_DSP_PROJ_MART: Close
+[0m12:19:36.149188 [debug] [MainThread]: Connection 'model.my_new_project.customers_incremental' was left open.
+[0m12:19:36.149505 [debug] [MainThread]: On model.my_new_project.customers_incremental: Close
+[0m12:19:36.738398 [info ] [MainThread]: 
+[0m12:19:36.739533 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 15.17 seconds (15.17s).
+[0m12:19:36.741461 [debug] [MainThread]: Command end result
+[0m12:19:36.785585 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Arjun_dbt_project\old_dbt_project\target\manifest.json
+[0m12:19:36.789848 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Arjun_dbt_project\old_dbt_project\target\semantic_manifest.json
+[0m12:19:36.794733 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Arjun_dbt_project\old_dbt_project\target\osi_document.json
+[0m12:19:36.802095 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Arjun_dbt_project\old_dbt_project\target\run_results.json
+[0m12:19:36.802373 [info ] [MainThread]: 
+[0m12:19:36.802767 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m12:19:36.803113 [info ] [MainThread]: 
+[0m12:19:36.803442 [error] [MainThread]: [[31mERROR[0m]: in model customers_incremental (models\SCD\customers_incremental.sql)
+[0m12:19:36.803770 [error] [MainThread]:   Database Error in model customers_incremental (models\SCD\customers_incremental.sql)
+  002139 (02000): SQL compilation error:
+  Unknown function EXIST.
+  compiled code at target\run\my_new_project\models\SCD\customers_incremental.sql
+[0m12:19:36.804011 [info ] [MainThread]: 
+[0m12:19:36.804259 [info ] [MainThread]:   compiled code at target\compiled\my_new_project\models\SCD\customers_incremental.sql
+[0m12:19:36.804456 [info ] [MainThread]: 
+[0m12:19:36.804745 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m12:19:36.805448 [debug] [MainThread]: Command `dbt run` failed at 12:19:36.805365 after 16.67 seconds
+[0m12:19:36.805710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A50AC65650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A50AF9D6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A50AF9EDF0>]}
+[0m12:19:36.805950 [debug] [MainThread]: Flushing usage events
+[0m12:19:38.605615 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:20:02.142439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F020355160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F01D161450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F022AB3C50>]}
+
+
+============================== 12:20:02.145916 | a1c4bd42-ca64-4a3d-b76a-0a5f5ab31e3a ==============================
+[0m12:20:02.145916 [info ] [MainThread]: Running with dbt=1.12.0
+[0m12:20:02.146450 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --select customers_incremental', 'log_path': 'C:\\Arjun_dbt_project\\old_dbt_project\\logs'}
+[0m12:20:02.464333 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m12:20:02.464846 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m12:20:02.465220 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m12:20:02.666258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a1c4bd42-ca64-4a3d-b76a-0a5f5ab31e3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F020A1DE00>]}
+[0m12:20:02.711441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a1c4bd42-ca64-4a3d-b76a-0a5f5ab31e3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F01E87EF10>]}
+[0m12:20:02.713079 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m12:20:02.929338 [debug] [MainThread]: checksum: 34d064bbf3d7c01e29a022f69428015a75a45641a9d372ee507764c8a4f69675, vars: {}, profile: my_dbt_project, target: dev, version: 1.12.0
+[0m12:20:03.071053 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m12:20:03.071534 [debug] [MainThread]: Partial parsing: updated file: my_new_project://models\SCD\customers_incremental.sql
+[0m12:20:03.309717 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a1c4bd42-ca64-4a3d-b76a-0a5f5ab31e3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F0249D6450>]}
+[0m12:20:03.421450 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Arjun_dbt_project\old_dbt_project\target\manifest.json
+[0m12:20:03.425658 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Arjun_dbt_project\old_dbt_project\target\semantic_manifest.json
+[0m12:20:03.445476 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Arjun_dbt_project\old_dbt_project\target\osi_document.json
+[0m12:20:03.464384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a1c4bd42-ca64-4a3d-b76a-0a5f5ab31e3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F025A66A80>]}
+[0m12:20:03.464818 [info ] [MainThread]: Found 16 models, 2 snapshots, 6 data tests, 8 sources, 548 macros
+[0m12:20:03.465226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a1c4bd42-ca64-4a3d-b76a-0a5f5ab31e3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F025C21B70>]}
+[0m12:20:03.466462 [info ] [MainThread]: 
+[0m12:20:03.466804 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:20:03.467093 [info ] [MainThread]: 
+[0m12:20:03.467463 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:20:03.468160 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_PRACTICE'
+[0m12:20:03.477317 [debug] [ThreadPool]: Using snowflake connection "list_DBT_PRACTICE"
+[0m12:20:03.477601 [debug] [ThreadPool]: On list_DBT_PRACTICE: show terse schemas in database DBT_PRACTICE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DBT_PRACTICE"} */
+[0m12:20:03.477795 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:20:04.890058 [debug] [ThreadPool]: SQL status: SUCCESS 7 in 1.412 seconds
+[0m12:20:04.899652 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_PRACTICE_SNAPSHOTS'
+[0m12:20:04.907605 [debug] [ThreadPool]: Using snowflake connection "list_DBT_PRACTICE_SNAPSHOTS"
+[0m12:20:04.907880 [debug] [ThreadPool]: On list_DBT_PRACTICE_SNAPSHOTS: show objects in DBT_PRACTICE.SNAPSHOTS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DBT_PRACTICE_SNAPSHOTS"} */;
+[0m12:20:04.908071 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:20:04.908502 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DSP_PROJ_STAGING'
+[0m12:20:04.909843 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_STAGING"
+[0m12:20:04.910324 [debug] [ThreadPool]: On list_DSP_PROJ_STAGING: show objects in DSP_PROJ.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_STAGING"} */;
+[0m12:20:04.910631 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:20:04.911022 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DSP_PROJ_MART'
+[0m12:20:04.912472 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DSP_PROJ_INTERMEDIATE'
+[0m12:20:04.913938 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MART"
+[0m12:20:04.914902 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_INTERMEDIATE"
+[0m12:20:04.915454 [debug] [ThreadPool]: On list_DSP_PROJ_MART: show objects in DSP_PROJ.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MART"} */;
+[0m12:20:04.915802 [debug] [ThreadPool]: On list_DSP_PROJ_INTERMEDIATE: show objects in DSP_PROJ.INTERMEDIATE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_INTERMEDIATE"} */;
+[0m12:20:04.916099 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:20:04.916400 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:20:06.424971 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.508 seconds
+[0m12:20:06.429987 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_INTERMEDIATE"
+[0m12:20:06.430264 [debug] [ThreadPool]: On list_DSP_PROJ_INTERMEDIATE: show user functions in DSP_PROJ.INTERMEDIATE
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_INTERMEDIATE"} */
+[0m12:20:06.645907 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.738 seconds
+[0m12:20:06.651052 [debug] [ThreadPool]: Using snowflake connection "list_DBT_PRACTICE_SNAPSHOTS"
+[0m12:20:06.651509 [debug] [ThreadPool]: On list_DBT_PRACTICE_SNAPSHOTS: show user functions in DBT_PRACTICE.SNAPSHOTS
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DBT_PRACTICE_SNAPSHOTS"} */
+[0m12:20:06.759515 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.329 seconds
+[0m12:20:06.764212 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DSP_PROJ_INTERMEDIATE, now list_DSP_PROJ_MARTS)
+[0m12:20:06.766121 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MARTS"
+[0m12:20:06.766480 [debug] [ThreadPool]: On list_DSP_PROJ_MARTS: show objects in DSP_PROJ.MARTS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MARTS"} */;
+[0m12:20:06.772184 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.862 seconds
+[0m12:20:06.773949 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_STAGING"
+[0m12:20:06.774186 [debug] [ThreadPool]: On list_DSP_PROJ_STAGING: show user functions in DSP_PROJ.STAGING
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_STAGING"} */
+[0m12:20:07.090385 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.438 seconds
+[0m12:20:07.136869 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.362 seconds
+[0m12:20:07.149741 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.383 seconds
+[0m12:20:07.152151 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MARTS"
+[0m12:20:07.152385 [debug] [ThreadPool]: On list_DSP_PROJ_MARTS: show user functions in DSP_PROJ.MARTS
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MARTS"} */
+[0m12:20:07.339245 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 2.423 seconds
+[0m12:20:07.342026 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MART"
+[0m12:20:07.342323 [debug] [ThreadPool]: On list_DSP_PROJ_MART: show user functions in DSP_PROJ.MART
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MART"} */
+[0m12:20:07.555595 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.403 seconds
+[0m12:20:07.682350 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.340 seconds
+[0m12:20:07.685471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a1c4bd42-ca64-4a3d-b76a-0a5f5ab31e3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F025DA2750>]}
+[0m12:20:07.687912 [debug] [Thread-2 (]: Began running node model.my_new_project.customers_incremental
+[0m12:20:07.688279 [info ] [Thread-2 (]: 1 of 1 START sql incremental model SNAPSHOTS.customers_incremental ............. [RUN]
+[0m12:20:07.688794 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.my_new_project.customers_incremental'
+[0m12:20:07.689024 [debug] [Thread-2 (]: Began compiling node model.my_new_project.customers_incremental
+[0m12:20:07.695051 [debug] [Thread-2 (]: Writing injected SQL for node "model.my_new_project.customers_incremental"
+[0m12:20:07.697948 [debug] [Thread-2 (]: Began executing node model.my_new_project.customers_incremental
+[0m12:20:07.740141 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:20:07.740479 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: create or replace  temporary view DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp
+  
+  
+  
+  
+  as (
+    
+
+
+
+select
+
+customer_id,
+
+customer_name,
+
+city,
+
+updated_at
+
+from DBT_PRACTICE.RAW.CUSTOMERS
+
+
+
+where updated_at > (select max(updated_at) from DBT_PRACTICE.SNAPSHOTS.customers_incremental)
+
+
+  )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */;
+[0m12:20:07.740706 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m12:20:09.253126 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.512 seconds
+[0m12:20:09.261627 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:20:09.262096 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: describe table DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:20:09.597986 [debug] [Thread-2 (]: SQL status: SUCCESS 4 in 0.335 seconds
+[0m12:20:09.603178 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:20:09.603502 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: describe table DBT_PRACTICE.SNAPSHOTS.customers_incremental
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:20:10.310367 [debug] [Thread-2 (]: SQL status: SUCCESS 4 in 0.706 seconds
+[0m12:20:10.319185 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:20:10.319450 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: describe table "DBT_PRACTICE"."SNAPSHOTS"."CUSTOMERS_INCREMENTAL"
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:20:10.664960 [debug] [Thread-2 (]: SQL status: SUCCESS 4 in 0.345 seconds
+[0m12:20:10.690046 [debug] [Thread-2 (]: Writing runtime sql for node "model.my_new_project.customers_incremental"
+[0m12:20:10.693224 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:20:10.693543 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: -- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */;
+[0m12:20:11.012567 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.318 seconds
+[0m12:20:11.013504 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:20:11.014281 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: merge into DBT_PRACTICE.SNAPSHOTS.customers_incremental as DBT_INTERNAL_DEST
+        using DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.customer_id = DBT_INTERNAL_DEST.customer_id))
+
+    
+    when matched then update set
+        "CUSTOMER_ID" = DBT_INTERNAL_SOURCE."CUSTOMER_ID","CUSTOMER_NAME" = DBT_INTERNAL_SOURCE."CUSTOMER_NAME","CITY" = DBT_INTERNAL_SOURCE."CITY","UPDATED_AT" = DBT_INTERNAL_SOURCE."UPDATED_AT"
+    
+
+    when not matched then insert
+        ("CUSTOMER_ID", "CUSTOMER_NAME", "CITY", "UPDATED_AT")
+    values
+        ("CUSTOMER_ID", "CUSTOMER_NAME", "CITY", "UPDATED_AT")
+
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */;
+[0m12:20:12.032764 [debug] [Thread-2 (]: SQL status: SUCCESS 0 in 1.017 seconds
+[0m12:20:12.034403 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:20:12.034728 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: COMMIT
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:20:12.803694 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.768 seconds
+[0m12:20:12.810254 [debug] [Thread-2 (]: Applying DROP to: DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp
+[0m12:20:12.814344 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:20:12.814617 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: drop view if exists DBT_PRACTICE.SNAPSHOTS.customers_incremental__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:20:13.255275 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.440 seconds
+[0m12:20:13.258186 [debug] [Thread-2 (]: Using snowflake connection "model.my_new_project.customers_incremental"
+[0m12:20:13.258860 [debug] [Thread-2 (]: On model.my_new_project.customers_incremental: delete from DBT_PRACTICE.SNAPSHOTS.customers_incremental t 
+where 
+not exists ( select 1 from DBT_PRACTICE.RAW.CUSTOMERS s
+where s.customer_id = t.customer_id )
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_new_project.customers_incremental"} */
+[0m12:20:14.231444 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.972 seconds
+[0m12:20:14.245738 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a1c4bd42-ca64-4a3d-b76a-0a5f5ab31e3a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F025E8B7D0>]}
+[0m12:20:14.246201 [info ] [Thread-2 (]: 1 of 1 OK created sql incremental model SNAPSHOTS.customers_incremental ........ [[32mSUCCESS 0[0m in 6.56s]
+[0m12:20:14.246778 [debug] [Thread-2 (]: Finished running node model.my_new_project.customers_incremental
+[0m12:20:14.247902 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:20:14.248114 [debug] [MainThread]: Connection 'list_DBT_PRACTICE' was left open.
+[0m12:20:14.248299 [debug] [MainThread]: On list_DBT_PRACTICE: Close
+[0m12:20:14.957436 [debug] [MainThread]: Connection 'list_DBT_PRACTICE_SNAPSHOTS' was left open.
+[0m12:20:14.958352 [debug] [MainThread]: On list_DBT_PRACTICE_SNAPSHOTS: Close
+[0m12:20:15.559541 [debug] [MainThread]: Connection 'list_DSP_PROJ_STAGING' was left open.
+[0m12:20:15.560300 [debug] [MainThread]: On list_DSP_PROJ_STAGING: Close
+[0m12:20:16.240234 [debug] [MainThread]: Connection 'list_DSP_PROJ_MART' was left open.
+[0m12:20:16.241125 [debug] [MainThread]: On list_DSP_PROJ_MART: Close
+[0m12:20:16.981956 [debug] [MainThread]: Connection 'list_DSP_PROJ_MARTS' was left open.
+[0m12:20:16.982631 [debug] [MainThread]: On list_DSP_PROJ_MARTS: Close
+[0m12:20:17.826874 [debug] [MainThread]: Connection 'model.my_new_project.customers_incremental' was left open.
+[0m12:20:17.827821 [debug] [MainThread]: On model.my_new_project.customers_incremental: Close
+[0m12:20:18.600178 [info ] [MainThread]: 
+[0m12:20:18.601498 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 15.13 seconds (15.13s).
+[0m12:20:18.603239 [debug] [MainThread]: Command end result
+[0m12:20:18.650677 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Arjun_dbt_project\old_dbt_project\target\manifest.json
+[0m12:20:18.654866 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Arjun_dbt_project\old_dbt_project\target\semantic_manifest.json
+[0m12:20:18.658809 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Arjun_dbt_project\old_dbt_project\target\osi_document.json
+[0m12:20:18.666904 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Arjun_dbt_project\old_dbt_project\target\run_results.json
+[0m12:20:18.667189 [info ] [MainThread]: 
+[0m12:20:18.667599 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:20:18.667996 [info ] [MainThread]: 
+[0m12:20:18.668304 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m12:20:18.668944 [debug] [MainThread]: Command `dbt run` succeeded at 12:20:18.668859 after 16.63 seconds
+[0m12:20:18.669194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F025C75650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F025ECFED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F025ECFBB0>]}
+[0m12:20:18.669429 [debug] [MainThread]: Flushing usage events
+[0m12:20:20.500804 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:02:03.532214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277DCA45160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277D9851450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277DF1AFB10>]}
+
+
+============================== 16:02:03.545649 | 8ff866ed-7c60-4116-8497-608f7880bfef ==============================
+[0m16:02:03.545649 [info ] [MainThread]: Running with dbt=1.12.0
+[0m16:02:03.546674 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt docs generate', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Arjun_dbt_project\\old_dbt_project\\logs'}
+[0m16:02:05.040893 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m16:02:05.041267 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m16:02:05.041509 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m16:02:06.428875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8ff866ed-7c60-4116-8497-608f7880bfef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277DD11DE00>]}
+[0m16:02:06.473293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8ff866ed-7c60-4116-8497-608f7880bfef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277DAF6EF10>]}
+[0m16:02:06.474913 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m16:02:06.735961 [debug] [MainThread]: checksum: 34d064bbf3d7c01e29a022f69428015a75a45641a9d372ee507764c8a4f69675, vars: {}, profile: my_dbt_project, target: dev, version: 1.12.0
+[0m16:02:07.115481 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:02:07.115804 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m16:02:07.116014 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:02:07.124367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8ff866ed-7c60-4116-8497-608f7880bfef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277E20F6550>]}
+[0m16:02:07.258688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8ff866ed-7c60-4116-8497-608f7880bfef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277E21C5040>]}
+[0m16:02:07.259218 [info ] [MainThread]: Found 16 models, 2 snapshots, 6 data tests, 8 sources, 548 macros
+[0m16:02:07.259652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8ff866ed-7c60-4116-8497-608f7880bfef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277E21B75B0>]}
+[0m16:02:07.265464 [info ] [MainThread]: 
+[0m16:02:07.266687 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:02:07.267202 [info ] [MainThread]: 
+[0m16:02:07.267771 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:02:07.272398 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_PRACTICE_SNAPSHOTS'
+[0m16:02:07.278850 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DSP_PROJ_STAGING'
+[0m16:02:07.294602 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DSP_PROJ_MARTS'
+[0m16:02:07.302234 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DSP_PROJ_INTERMEDIATE'
+[0m16:02:07.307886 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_STAGING"
+[0m16:02:07.308211 [debug] [ThreadPool]: On list_DSP_PROJ_STAGING: show objects in DSP_PROJ.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_STAGING"} */;
+[0m16:02:07.308442 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:02:07.308903 [debug] [ThreadPool]: Using snowflake connection "list_DBT_PRACTICE_SNAPSHOTS"
+[0m16:02:07.309283 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MARTS"
+[0m16:02:07.309510 [debug] [ThreadPool]: On list_DBT_PRACTICE_SNAPSHOTS: show objects in DBT_PRACTICE.SNAPSHOTS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DBT_PRACTICE_SNAPSHOTS"} */;
+[0m16:02:07.309773 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_INTERMEDIATE"
+[0m16:02:07.310087 [debug] [ThreadPool]: On list_DSP_PROJ_MARTS: show objects in DSP_PROJ.MARTS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MARTS"} */;
+[0m16:02:07.311976 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:02:07.312351 [debug] [ThreadPool]: On list_DSP_PROJ_INTERMEDIATE: show objects in DSP_PROJ.INTERMEDIATE
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_INTERMEDIATE"} */;
+[0m16:02:07.312644 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:02:07.313014 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:02:08.961815 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.650 seconds
+[0m16:02:08.965842 [debug] [ThreadPool]: Using snowflake connection "list_DBT_PRACTICE_SNAPSHOTS"
+[0m16:02:08.966095 [debug] [ThreadPool]: On list_DBT_PRACTICE_SNAPSHOTS: show user functions in DBT_PRACTICE.SNAPSHOTS
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DBT_PRACTICE_SNAPSHOTS"} */
+[0m16:02:08.984970 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.672 seconds
+[0m16:02:08.986785 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MARTS"
+[0m16:02:08.987046 [debug] [ThreadPool]: On list_DSP_PROJ_MARTS: show user functions in DSP_PROJ.MARTS
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MARTS"} */
+[0m16:02:09.070425 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.762 seconds
+[0m16:02:09.071900 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 1.759 seconds
+[0m16:02:09.076016 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_STAGING"
+[0m16:02:09.080346 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_INTERMEDIATE"
+[0m16:02:09.080789 [debug] [ThreadPool]: On list_DSP_PROJ_STAGING: show user functions in DSP_PROJ.STAGING
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_STAGING"} */
+[0m16:02:09.081126 [debug] [ThreadPool]: On list_DSP_PROJ_INTERMEDIATE: show user functions in DSP_PROJ.INTERMEDIATE
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_INTERMEDIATE"} */
+[0m16:02:09.299505 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.333 seconds
+[0m16:02:09.300918 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DBT_PRACTICE_SNAPSHOTS, now list_DSP_PROJ_MART)
+[0m16:02:09.302067 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MART"
+[0m16:02:09.302344 [debug] [ThreadPool]: On list_DSP_PROJ_MART: show objects in DSP_PROJ.MART
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MART"} */;
+[0m16:02:09.332185 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.345 seconds
+[0m16:02:09.411600 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.330 seconds
+[0m16:02:09.421435 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.340 seconds
+[0m16:02:09.796012 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.493 seconds
+[0m16:02:09.797773 [debug] [ThreadPool]: Using snowflake connection "list_DSP_PROJ_MART"
+[0m16:02:09.798002 [debug] [ThreadPool]: On list_DSP_PROJ_MART: show user functions in DSP_PROJ.MART
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_DSP_PROJ_MART"} */
+[0m16:02:10.114162 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.316 seconds
+[0m16:02:10.116778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8ff866ed-7c60-4116-8497-608f7880bfef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277E215BA00>]}
+[0m16:02:10.130496 [debug] [Thread-4 (]: Began running node model.my_new_project.stg_consumer_application_detail
+[0m16:02:10.130876 [debug] [Thread-5 (]: Began running node model.my_new_project.stg_customers
+[0m16:02:10.131146 [debug] [Thread-2 (]: Began running node model.my_new_project.customers_incremental
+[0m16:02:10.131365 [debug] [Thread-3 (]: Began running node model.my_new_project.stg_billdesk_payment_res
+[0m16:02:10.131759 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.my_new_project.stg_consumer_application_detail'
+[0m16:02:10.132162 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.my_new_project.stg_customers'
+[0m16:02:10.132484 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.my_new_project.customers_incremental'
+[0m16:02:10.132827 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.my_new_project.stg_billdesk_payment_res'
+[0m16:02:10.133083 [debug] [Thread-4 (]: Began compiling node model.my_new_project.stg_consumer_application_detail
+[0m16:02:10.133310 [debug] [Thread-5 (]: Began compiling node model.my_new_project.stg_customers
+[0m16:02:10.133568 [debug] [Thread-2 (]: Began compiling node model.my_new_project.customers_incremental
+[0m16:02:10.133803 [debug] [Thread-3 (]: Began compiling node model.my_new_project.stg_billdesk_payment_res
+[0m16:02:10.139083 [debug] [Thread-4 (]: Writing injected SQL for node "model.my_new_project.stg_consumer_application_detail"
+[0m16:02:10.141592 [debug] [Thread-5 (]: Writing injected SQL for node "model.my_new_project.stg_customers"
+[0m16:02:10.147647 [debug] [Thread-2 (]: Writing injected SQL for node "model.my_new_project.customers_incremental"
+[0m16:02:10.149210 [debug] [Thread-3 (]: Writing injected SQL for node "model.my_new_project.stg_billdesk_payment_res"
+[0m16:02:10.159813 [debug] [Thread-3 (]: Began executing node model.my_new_project.stg_billdesk_payment_res
+[0m16:02:10.160422 [debug] [Thread-2 (]: Began executing node model.my_new_project.customers_incremental
+[0m16:02:10.161111 [debug] [Thread-3 (]: Finished running node model.my_new_project.stg_billdesk_payment_res
+[0m16:02:10.161339 [debug] [Thread-4 (]: Began executing node model.my_new_project.stg_consumer_application_detail
+[0m16:02:10.161812 [debug] [Thread-2 (]: Finished running node model.my_new_project.customers_incremental
+[0m16:02:10.162109 [debug] [Thread-3 (]: Began running node model.my_new_project.stg_customers_check
+[0m16:02:10.162641 [debug] [Thread-4 (]: Finished running node model.my_new_project.stg_consumer_application_detail
+[0m16:02:10.162987 [debug] [Thread-2 (]: Began running node model.my_new_project.stg_erp_budget_workflow_amount
+[0m16:02:10.163301 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.my_new_project.stg_billdesk_payment_res, now model.my_new_project.stg_customers_check)
+[0m16:02:10.163569 [debug] [Thread-4 (]: Began running node model.my_new_project.stg_erp_rev
+[0m16:02:10.163966 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.my_new_project.customers_incremental, now model.my_new_project.stg_erp_budget_workflow_amount)
+[0m16:02:10.164269 [debug] [Thread-3 (]: Began compiling node model.my_new_project.stg_customers_check
+[0m16:02:10.164550 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.my_new_project.stg_consumer_application_detail, now model.my_new_project.stg_erp_rev)
+[0m16:02:10.164801 [debug] [Thread-2 (]: Began compiling node model.my_new_project.stg_erp_budget_workflow_amount
+[0m16:02:10.166133 [debug] [Thread-3 (]: Writing injected SQL for node "model.my_new_project.stg_customers_check"
+[0m16:02:10.166463 [debug] [Thread-5 (]: Began executing node model.my_new_project.stg_customers
+[0m16:02:10.166708 [debug] [Thread-4 (]: Began compiling node model.my_new_project.stg_erp_rev
+[0m16:02:10.168067 [debug] [Thread-2 (]: Writing injected SQL for node "model.my_new_project.stg_erp_budget_workflow_amount"
+[0m16:02:10.168622 [debug] [Thread-5 (]: Finished running node model.my_new_project.stg_customers
+[0m16:02:10.170106 [debug] [Thread-4 (]: Writing injected SQL for node "model.my_new_project.stg_erp_rev"
+[0m16:02:10.170538 [debug] [Thread-5 (]: Began running node model.my_new_project.stg_pose_machine_d
+[0m16:02:10.171187 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.my_new_project.stg_customers, now model.my_new_project.stg_pose_machine_d)
+[0m16:02:10.171636 [debug] [Thread-5 (]: Began compiling node model.my_new_project.stg_pose_machine_d
+[0m16:02:10.173563 [debug] [Thread-5 (]: Writing injected SQL for node "model.my_new_project.stg_pose_machine_d"
+[0m16:02:10.174994 [debug] [Thread-3 (]: Began executing node model.my_new_project.stg_customers_check
+[0m16:02:10.176531 [debug] [Thread-2 (]: Began executing node model.my_new_project.stg_erp_budget_workflow_amount
+[0m16:02:10.176955 [debug] [Thread-4 (]: Began executing node model.my_new_project.stg_erp_rev
+[0m16:02:10.178056 [debug] [Thread-3 (]: Finished running node model.my_new_project.stg_customers_check
+[0m16:02:10.178751 [debug] [Thread-2 (]: Finished running node model.my_new_project.stg_erp_budget_workflow_amount
+[0m16:02:10.179287 [debug] [Thread-4 (]: Finished running node model.my_new_project.stg_erp_rev
+[0m16:02:10.179558 [debug] [Thread-5 (]: Began executing node model.my_new_project.stg_pose_machine_d
+[0m16:02:10.179850 [debug] [Thread-3 (]: Began running node model.my_new_project.fact_payments
+[0m16:02:10.180168 [debug] [Thread-2 (]: Began running node model.my_new_project.dim_consumer
+[0m16:02:10.180515 [debug] [Thread-4 (]: Began running node model.my_new_project.inter_consumer_bill
+[0m16:02:10.181475 [debug] [Thread-5 (]: Finished running node model.my_new_project.stg_pose_machine_d
+[0m16:02:10.181797 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.my_new_project.stg_customers_check, now model.my_new_project.fact_payments)
+[0m16:02:10.182092 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.my_new_project.stg_erp_budget_workflow_amount, now model.my_new_project.dim_consumer)
+[0m16:02:10.182381 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.my_new_project.stg_erp_rev, now model.my_new_project.inter_consumer_bill)
+[0m16:02:10.182691 [debug] [Thread-5 (]: Began running node test.my_new_project.not_null_stg_consumer_application_detail_consumer_application_number.bedd807512
+[0m16:02:10.182968 [debug] [Thread-3 (]: Began compiling node model.my_new_project.fact_payments
+[0m16:02:10.183243 [debug] [Thread-2 (]: Began compiling node model.my_new_project.dim_consumer
+[0m16:02:10.183480 [debug] [Thread-4 (]: Began compiling node model.my_new_project.inter_consumer_bill
+[0m16:02:10.183765 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.my_new_project.stg_pose_machine_d, now test.my_new_project.not_null_stg_consumer_application_detail_consumer_application_number.bedd807512)
+[0m16:02:10.185052 [debug] [Thread-3 (]: Writing injected SQL for node "model.my_new_project.fact_payments"
+[0m16:02:10.186276 [debug] [Thread-2 (]: Writing injected SQL for node "model.my_new_project.dim_consumer"
+[0m16:02:10.187503 [debug] [Thread-4 (]: Writing injected SQL for node "model.my_new_project.inter_consumer_bill"
+[0m16:02:10.187807 [debug] [Thread-5 (]: Began compiling node test.my_new_project.not_null_stg_consumer_application_detail_consumer_application_number.bedd807512
+[0m16:02:10.200505 [debug] [Thread-5 (]: Writing injected SQL for node "test.my_new_project.not_null_stg_consumer_application_detail_consumer_application_number.bedd807512"
+[0m16:02:10.203166 [debug] [Thread-2 (]: Began executing node model.my_new_project.dim_consumer
+[0m16:02:10.204165 [debug] [Thread-2 (]: Finished running node model.my_new_project.dim_consumer
+[0m16:02:10.204598 [debug] [Thread-4 (]: Began executing node model.my_new_project.inter_consumer_bill
+[0m16:02:10.204905 [debug] [Thread-2 (]: Began running node test.my_new_project.not_null_stg_consumer_application_detail_created_date.6177596507
+[0m16:02:10.205145 [debug] [Thread-3 (]: Began executing node model.my_new_project.fact_payments
+[0m16:02:10.205398 [debug] [Thread-5 (]: Began executing node test.my_new_project.not_null_stg_consumer_application_detail_consumer_application_number.bedd807512
+[0m16:02:10.205904 [debug] [Thread-4 (]: Finished running node model.my_new_project.inter_consumer_bill
+[0m16:02:10.206200 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.my_new_project.dim_consumer, now test.my_new_project.not_null_stg_consumer_application_detail_created_date.6177596507)
+[0m16:02:10.206645 [debug] [Thread-3 (]: Finished running node model.my_new_project.fact_payments
+[0m16:02:10.207187 [debug] [Thread-5 (]: Finished running node test.my_new_project.not_null_stg_consumer_application_detail_consumer_application_number.bedd807512
+[0m16:02:10.207483 [debug] [Thread-4 (]: Began running node snapshot.my_new_project.customer_snapshot
+[0m16:02:10.207756 [debug] [Thread-2 (]: Began compiling node test.my_new_project.not_null_stg_consumer_application_detail_created_date.6177596507
+[0m16:02:10.208016 [debug] [Thread-3 (]: Began running node test.my_new_project.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m16:02:10.208290 [debug] [Thread-5 (]: Began running node test.my_new_project.unique_stg_customers_customer_id.c7614daada
+[0m16:02:10.208572 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.my_new_project.inter_consumer_bill, now snapshot.my_new_project.customer_snapshot)
+[0m16:02:10.212522 [debug] [Thread-2 (]: Writing injected SQL for node "test.my_new_project.not_null_stg_consumer_application_detail_created_date.6177596507"
+[0m16:02:10.212850 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.my_new_project.fact_payments, now test.my_new_project.not_null_stg_customers_customer_id.e2cfb1f9aa)
+[0m16:02:10.213162 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.my_new_project.not_null_stg_consumer_application_detail_consumer_application_number.bedd807512, now test.my_new_project.unique_stg_customers_customer_id.c7614daada)
+[0m16:02:10.213457 [debug] [Thread-4 (]: Began compiling node snapshot.my_new_project.customer_snapshot
+[0m16:02:10.213787 [debug] [Thread-3 (]: Began compiling node test.my_new_project.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m16:02:10.214037 [debug] [Thread-5 (]: Began compiling node test.my_new_project.unique_stg_customers_customer_id.c7614daada
+[0m16:02:10.215544 [debug] [Thread-4 (]: Writing injected SQL for node "snapshot.my_new_project.customer_snapshot"
+[0m16:02:10.219610 [debug] [Thread-3 (]: Writing injected SQL for node "test.my_new_project.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m16:02:10.223500 [debug] [Thread-2 (]: Began executing node test.my_new_project.not_null_stg_consumer_application_detail_created_date.6177596507
+[0m16:02:10.226145 [debug] [Thread-5 (]: Writing injected SQL for node "test.my_new_project.unique_stg_customers_customer_id.c7614daada"
+[0m16:02:10.226789 [debug] [Thread-2 (]: Finished running node test.my_new_project.not_null_stg_consumer_application_detail_created_date.6177596507
+[0m16:02:10.227224 [debug] [Thread-2 (]: Began running node snapshot.my_new_project.customer_check_snapshot
+[0m16:02:10.227583 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.my_new_project.not_null_stg_consumer_application_detail_created_date.6177596507, now snapshot.my_new_project.customer_check_snapshot)
+[0m16:02:10.227951 [debug] [Thread-2 (]: Began compiling node snapshot.my_new_project.customer_check_snapshot
+[0m16:02:10.229731 [debug] [Thread-2 (]: Writing injected SQL for node "snapshot.my_new_project.customer_check_snapshot"
+[0m16:02:10.233562 [debug] [Thread-5 (]: Began executing node test.my_new_project.unique_stg_customers_customer_id.c7614daada
+[0m16:02:10.233993 [debug] [Thread-3 (]: Began executing node test.my_new_project.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m16:02:10.234298 [debug] [Thread-4 (]: Began executing node snapshot.my_new_project.customer_snapshot
+[0m16:02:10.234812 [debug] [Thread-5 (]: Finished running node test.my_new_project.unique_stg_customers_customer_id.c7614daada
+[0m16:02:10.235046 [debug] [Thread-2 (]: Began executing node snapshot.my_new_project.customer_check_snapshot
+[0m16:02:10.235521 [debug] [Thread-3 (]: Finished running node test.my_new_project.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m16:02:10.235961 [debug] [Thread-4 (]: Finished running node snapshot.my_new_project.customer_snapshot
+[0m16:02:10.236227 [debug] [Thread-5 (]: Began running node model.my_new_project.fact_budget
+[0m16:02:10.236689 [debug] [Thread-2 (]: Finished running node snapshot.my_new_project.customer_check_snapshot
+[0m16:02:10.236952 [debug] [Thread-3 (]: Began running node model.my_new_project.inter_consumer_budget
+[0m16:02:10.237233 [debug] [Thread-4 (]: Began running node test.my_new_project.check_negative_amount
+[0m16:02:10.237532 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.my_new_project.unique_stg_customers_customer_id.c7614daada, now model.my_new_project.fact_budget)
+[0m16:02:10.237790 [debug] [Thread-2 (]: Began running node test.my_new_project.positive_value_stg_erp_budget_workflow_amount_je_return_amount.a05798ea55
+[0m16:02:10.238059 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.my_new_project.not_null_stg_customers_customer_id.e2cfb1f9aa, now model.my_new_project.inter_consumer_budget)
+[0m16:02:10.238363 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly snapshot.my_new_project.customer_snapshot, now test.my_new_project.check_negative_amount)
+[0m16:02:10.238604 [debug] [Thread-5 (]: Began compiling node model.my_new_project.fact_budget
+[0m16:02:10.238866 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly snapshot.my_new_project.customer_check_snapshot, now test.my_new_project.positive_value_stg_erp_budget_workflow_amount_je_return_amount.a05798ea55)
+[0m16:02:10.239307 [debug] [Thread-3 (]: Began compiling node model.my_new_project.inter_consumer_budget
+[0m16:02:10.239650 [debug] [Thread-4 (]: Began compiling node test.my_new_project.check_negative_amount
+[0m16:02:10.241388 [debug] [Thread-5 (]: Writing injected SQL for node "model.my_new_project.fact_budget"
+[0m16:02:10.241677 [debug] [Thread-2 (]: Began compiling node test.my_new_project.positive_value_stg_erp_budget_workflow_amount_je_return_amount.a05798ea55
+[0m16:02:10.242843 [debug] [Thread-3 (]: Writing injected SQL for node "model.my_new_project.inter_consumer_budget"
+[0m16:02:10.244025 [debug] [Thread-4 (]: Writing injected SQL for node "test.my_new_project.check_negative_amount"
+[0m16:02:10.248605 [debug] [Thread-2 (]: Writing injected SQL for node "test.my_new_project.positive_value_stg_erp_budget_workflow_amount_je_return_amount.a05798ea55"
+[0m16:02:10.252308 [debug] [Thread-3 (]: Began executing node model.my_new_project.inter_consumer_budget
+[0m16:02:10.252779 [debug] [Thread-2 (]: Began executing node test.my_new_project.positive_value_stg_erp_budget_workflow_amount_je_return_amount.a05798ea55
+[0m16:02:10.253162 [debug] [Thread-5 (]: Began executing node model.my_new_project.fact_budget
+[0m16:02:10.253706 [debug] [Thread-3 (]: Finished running node model.my_new_project.inter_consumer_budget
+[0m16:02:10.254185 [debug] [Thread-2 (]: Finished running node test.my_new_project.positive_value_stg_erp_budget_workflow_amount_je_return_amount.a05798ea55
+[0m16:02:10.254625 [debug] [Thread-5 (]: Finished running node model.my_new_project.fact_budget
+[0m16:02:10.255076 [debug] [Thread-3 (]: Began running node model.my_new_project.fact_erp_rev
+[0m16:02:10.255454 [debug] [Thread-2 (]: Began running node model.my_new_project.fact_pose_machine_d
+[0m16:02:10.255746 [debug] [Thread-4 (]: Began executing node test.my_new_project.check_negative_amount
+[0m16:02:10.256078 [debug] [Thread-5 (]: Began running node model.my_new_project.inter_consumer_erp_posemachine
+[0m16:02:10.256392 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.my_new_project.inter_consumer_budget, now model.my_new_project.fact_erp_rev)
+[0m16:02:10.256697 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.my_new_project.positive_value_stg_erp_budget_workflow_amount_je_return_amount.a05798ea55, now model.my_new_project.fact_pose_machine_d)
+[0m16:02:10.257148 [debug] [Thread-4 (]: Finished running node test.my_new_project.check_negative_amount
+[0m16:02:10.257404 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly model.my_new_project.fact_budget, now model.my_new_project.inter_consumer_erp_posemachine)
+[0m16:02:10.257644 [debug] [Thread-3 (]: Began compiling node model.my_new_project.fact_erp_rev
+[0m16:02:10.257887 [debug] [Thread-2 (]: Began compiling node model.my_new_project.fact_pose_machine_d
+[0m16:02:10.258188 [debug] [Thread-5 (]: Began compiling node model.my_new_project.inter_consumer_erp_posemachine
+[0m16:02:10.259728 [debug] [Thread-3 (]: Writing injected SQL for node "model.my_new_project.fact_erp_rev"
+[0m16:02:10.261011 [debug] [Thread-2 (]: Writing injected SQL for node "model.my_new_project.fact_pose_machine_d"
+[0m16:02:10.262240 [debug] [Thread-5 (]: Writing injected SQL for node "model.my_new_project.inter_consumer_erp_posemachine"
+[0m16:02:10.265571 [debug] [Thread-2 (]: Began executing node model.my_new_project.fact_pose_machine_d
+[0m16:02:10.265954 [debug] [Thread-5 (]: Began executing node model.my_new_project.inter_consumer_erp_posemachine
+[0m16:02:10.266219 [debug] [Thread-3 (]: Began executing node model.my_new_project.fact_erp_rev
+[0m16:02:10.266698 [debug] [Thread-2 (]: Finished running node model.my_new_project.fact_pose_machine_d
+[0m16:02:10.267145 [debug] [Thread-5 (]: Finished running node model.my_new_project.inter_consumer_erp_posemachine
+[0m16:02:10.267542 [debug] [Thread-3 (]: Finished running node model.my_new_project.fact_erp_rev
+[0m16:02:10.268559 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:02:10.268772 [debug] [MainThread]: Connection 'list_DSP_PROJ_MART' was left open.
+[0m16:02:10.268955 [debug] [MainThread]: On list_DSP_PROJ_MART: Close
+[0m16:02:10.804112 [debug] [MainThread]: Connection 'list_DSP_PROJ_STAGING' was left open.
+[0m16:02:10.804421 [debug] [MainThread]: On list_DSP_PROJ_STAGING: Close
+[0m16:02:11.795761 [debug] [MainThread]: Connection 'list_DSP_PROJ_MARTS' was left open.
+[0m16:02:11.796456 [debug] [MainThread]: On list_DSP_PROJ_MARTS: Close
+[0m16:02:12.470033 [debug] [MainThread]: Connection 'list_DSP_PROJ_INTERMEDIATE' was left open.
+[0m16:02:12.470607 [debug] [MainThread]: On list_DSP_PROJ_INTERMEDIATE: Close
+[0m16:02:13.492954 [debug] [MainThread]: Connection 'test.my_new_project.check_negative_amount' was properly closed.
+[0m16:02:13.493479 [debug] [MainThread]: Connection 'model.my_new_project.inter_consumer_erp_posemachine' was properly closed.
+[0m16:02:13.493925 [debug] [MainThread]: Connection 'model.my_new_project.fact_pose_machine_d' was properly closed.
+[0m16:02:13.494306 [debug] [MainThread]: Connection 'model.my_new_project.fact_erp_rev' was properly closed.
+[0m16:02:13.496822 [debug] [MainThread]: Command end result
+[0m16:02:13.613929 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Arjun_dbt_project\old_dbt_project\target\manifest.json
+[0m16:02:13.628073 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Arjun_dbt_project\old_dbt_project\target\semantic_manifest.json
+[0m16:02:13.743734 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Arjun_dbt_project\old_dbt_project\target\osi_document.json
+[0m16:02:13.757331 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Arjun_dbt_project\old_dbt_project\target\run_results.json
+[0m16:02:14.046597 [debug] [MainThread]: Acquiring new snowflake connection 'generate_catalog'
+[0m16:02:14.046913 [info ] [MainThread]: Building catalog
+[0m16:02:14.055671 [debug] [ThreadPool]: Acquiring new snowflake connection 'DSP_PROJ.information_schema'
+[0m16:02:14.060149 [debug] [ThreadPool]: Acquiring new snowflake connection 'DBT_PRACTICE.information_schema'
+[0m16:02:14.070188 [debug] [ThreadPool]: Using snowflake connection "DSP_PROJ.information_schema"
+[0m16:02:14.072921 [debug] [ThreadPool]: Using snowflake connection "DBT_PRACTICE.information_schema"
+[0m16:02:14.073462 [debug] [ThreadPool]: On DSP_PROJ.information_schema: with tables as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+        case
+            when is_dynamic = 'YES' and table_type = 'BASE TABLE' THEN 'DYNAMIC TABLE'
+            else table_type
+        end as "table_type",
+        comment as "table_comment",
+
+        -- note: this is the _role_ that owns the table
+        table_owner as "table_owner",
+
+        'Clustering Key' as "stats:clustering_key:label",
+        clustering_key as "stats:clustering_key:value",
+        'The key used to cluster this table' as "stats:clustering_key:description",
+        (clustering_key is not null) as "stats:clustering_key:include",
+
+        'Row Count' as "stats:row_count:label",
+        row_count as "stats:row_count:value",
+        'An approximate count of rows in this table' as "stats:row_count:description",
+        (row_count is not null) as "stats:row_count:include",
+
+        'Approximate Size' as "stats:bytes:label",
+        bytes as "stats:bytes:value",
+        'Approximate size of the table as reported by Snowflake' as "stats:bytes:description",
+        (bytes is not null) as "stats:bytes:include",
+
+        'Last Modified' as "stats:last_modified:label",
+        to_varchar(convert_timezone('UTC', last_altered), 'yyyy-mm-dd HH24:MI'||'UTC') as "stats:last_modified:value",
+        'The timestamp for last update/change' as "stats:last_modified:description",
+        (last_altered is not null and table_type='BASE TABLE') as "stats:last_modified:include"
+    from DSP_PROJ.INFORMATION_SCHEMA.tables
+            where (
+                (
+                    
+    "table_schema" ilike 'STAGING' and upper("table_schema") = upper('STAGING')
+
+                    and 
+    "table_name" ilike 'stg_consumer_application_detail' and upper("table_name") = upper('stg_consumer_application_detail')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'INTERMEDIATE' and upper("table_schema") = upper('INTERMEDIATE')
+
+                    and 
+    "table_name" ilike 'inter_consumer_erp_posemachine' and upper("table_name") = upper('inter_consumer_erp_posemachine')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'MART' and upper("table_schema") = upper('MART')
+
+                    and 
+    "table_name" ilike 'dim_consumer' and upper("table_name") = upper('dim_consumer')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'STAGING' and upper("table_schema") = upper('STAGING')
+
+                    and 
+    "table_name" ilike 'stg_pose_machine_d' and upper("table_name") = upper('stg_pose_machine_d')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'MARTS' and upper("table_schema") = upper('MARTS')
+
+                    and 
+    "table_name" ilike 'fact_pose_machine_d' and upper("table_name") = upper('fact_pose_machine_d')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'RAW' and upper("table_schema") = upper('RAW')
+
+                    and 
+    "table_name" ilike 'ERP_BUDGET_WORKFLOW_AMOUNT' and upper("table_name") = upper('ERP_BUDGET_WORKFLOW_AMOUNT')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'INTERMEDIATE' and upper("table_schema") = upper('INTERMEDIATE')
+
+                    and 
+    "table_name" ilike 'inter_consumer_bill' and upper("table_name") = upper('inter_consumer_bill')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'RAW' and upper("table_schema") = upper('RAW')
+
+                    and 
+    "table_name" ilike 'BILLDESK_PAYMENT_RES' and upper("table_name") = upper('BILLDESK_PAYMENT_RES')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'MARTS' and upper("table_schema") = upper('MARTS')
+
+                    and 
+    "table_name" ilike 'fact_budget' and upper("table_name") = upper('fact_budget')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'MARTS' and upper("table_schema") = upper('MARTS')
+
+                    and 
+    "table_name" ilike 'fact_erp_rev' and upper("table_name") = upper('fact_erp_rev')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'STAGING' and upper("table_schema") = upper('STAGING')
+
+                    and 
+    "table_name" ilike 'stg_erp_budget_workflow_amount' and upper("table_name") = upper('stg_erp_budget_workflow_amount')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'RAW' and upper("table_schema") = upper('RAW')
+
+                    and 
+    "table_name" ilike 'CONSUMER_APPLICATION_DETAIL' and upper("table_name") = upper('CONSUMER_APPLICATION_DETAIL')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'MARTS' and upper("table_schema") = upper('MARTS')
+
+                    and 
+    "table_name" ilike 'fact_payments' and upper("table_name") = upper('fact_payments')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'RAW' and upper("table_schema") = upper('RAW')
+
+                    and 
+    "table_name" ilike 'POSE_MACHINE_D' and upper("table_name") = upper('POSE_MACHINE_D')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'STAGING' and upper("table_schema") = upper('STAGING')
+
+                    and 
+    "table_name" ilike 'stg_billdesk_payment_res' and upper("table_name") = upper('stg_billdesk_payment_res')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'RAW' and upper("table_schema") = upper('RAW')
+
+                    and 
+    "table_name" ilike 'ERP_REV' and upper("table_name") = upper('ERP_REV')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'INTERMEDIATE' and upper("table_schema") = upper('INTERMEDIATE')
+
+                    and 
+    "table_name" ilike 'inter_consumer_budget' and upper("table_name") = upper('inter_consumer_budget')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'STAGING' and upper("table_schema") = upper('STAGING')
+
+                    and 
+    "table_name" ilike 'stg_erp_rev' and upper("table_name") = upper('stg_erp_rev')
+
+                )
+            )
+        ),
+        columns as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+
+        column_name as "column_name",
+        ordinal_position as "column_index",
+        data_type as "column_type",
+        comment as "column_comment"
+    from DSP_PROJ.INFORMATION_SCHEMA.columns
+            where (
+                (
+                    
+    "table_schema" ilike 'STAGING' and upper("table_schema") = upper('STAGING')
+
+                    and 
+    "table_name" ilike 'stg_consumer_application_detail' and upper("table_name") = upper('stg_consumer_application_detail')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'INTERMEDIATE' and upper("table_schema") = upper('INTERMEDIATE')
+
+                    and 
+    "table_name" ilike 'inter_consumer_erp_posemachine' and upper("table_name") = upper('inter_consumer_erp_posemachine')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'MART' and upper("table_schema") = upper('MART')
+
+                    and 
+    "table_name" ilike 'dim_consumer' and upper("table_name") = upper('dim_consumer')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'STAGING' and upper("table_schema") = upper('STAGING')
+
+                    and 
+    "table_name" ilike 'stg_pose_machine_d' and upper("table_name") = upper('stg_pose_machine_d')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'MARTS' and upper("table_schema") = upper('MARTS')
+
+                    and 
+    "table_name" ilike 'fact_pose_machine_d' and upper("table_name") = upper('fact_pose_machine_d')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'RAW' and upper("table_schema") = upper('RAW')
+
+                    and 
+    "table_name" ilike 'ERP_BUDGET_WORKFLOW_AMOUNT' and upper("table_name") = upper('ERP_BUDGET_WORKFLOW_AMOUNT')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'INTERMEDIATE' and upper("table_schema") = upper('INTERMEDIATE')
+
+                    and 
+    "table_name" ilike 'inter_consumer_bill' and upper("table_name") = upper('inter_consumer_bill')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'RAW' and upper("table_schema") = upper('RAW')
+
+                    and 
+    "table_name" ilike 'BILLDESK_PAYMENT_RES' and upper("table_name") = upper('BILLDESK_PAYMENT_RES')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'MARTS' and upper("table_schema") = upper('MARTS')
+
+                    and 
+    "table_name" ilike 'fact_budget' and upper("table_name") = upper('fact_budget')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'MARTS' and upper("table_schema") = upper('MARTS')
+
+                    and 
+    "table_name" ilike 'fact_erp_rev' and upper("table_name") = upper('fact_erp_rev')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'STAGING' and upper("table_schema") = upper('STAGING')
+
+                    and 
+    "table_name" ilike 'stg_erp_budget_workflow_amount' and upper("table_name") = upper('stg_erp_budget_workflow_amount')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'RAW' and upper("table_schema") = upper('RAW')
+
+                    and 
+    "table_name" ilike 'CONSUMER_APPLICATION_DETAIL' and upper("table_name") = upper('CONSUMER_APPLICATION_DETAIL')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'MARTS' and upper("table_schema") = upper('MARTS')
+
+                    and 
+    "table_name" ilike 'fact_payments' and upper("table_name") = upper('fact_payments')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'RAW' and upper("table_schema") = upper('RAW')
+
+                    and 
+    "table_name" ilike 'POSE_MACHINE_D' and upper("table_name") = upper('POSE_MACHINE_D')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'STAGING' and upper("table_schema") = upper('STAGING')
+
+                    and 
+    "table_name" ilike 'stg_billdesk_payment_res' and upper("table_name") = upper('stg_billdesk_payment_res')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'RAW' and upper("table_schema") = upper('RAW')
+
+                    and 
+    "table_name" ilike 'ERP_REV' and upper("table_name") = upper('ERP_REV')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'INTERMEDIATE' and upper("table_schema") = upper('INTERMEDIATE')
+
+                    and 
+    "table_name" ilike 'inter_consumer_budget' and upper("table_name") = upper('inter_consumer_budget')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'STAGING' and upper("table_schema") = upper('STAGING')
+
+                    and 
+    "table_name" ilike 'stg_erp_rev' and upper("table_name") = upper('stg_erp_rev')
+
+                )
+            )
+        )
+        select *
+    from tables
+    join columns using ("table_database", "table_schema", "table_name")
+    order by "column_index"
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "DSP_PROJ.information_schema"} */
+[0m16:02:14.074129 [debug] [ThreadPool]: On DBT_PRACTICE.information_schema: with tables as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+        case
+            when is_dynamic = 'YES' and table_type = 'BASE TABLE' THEN 'DYNAMIC TABLE'
+            else table_type
+        end as "table_type",
+        comment as "table_comment",
+
+        -- note: this is the _role_ that owns the table
+        table_owner as "table_owner",
+
+        'Clustering Key' as "stats:clustering_key:label",
+        clustering_key as "stats:clustering_key:value",
+        'The key used to cluster this table' as "stats:clustering_key:description",
+        (clustering_key is not null) as "stats:clustering_key:include",
+
+        'Row Count' as "stats:row_count:label",
+        row_count as "stats:row_count:value",
+        'An approximate count of rows in this table' as "stats:row_count:description",
+        (row_count is not null) as "stats:row_count:include",
+
+        'Approximate Size' as "stats:bytes:label",
+        bytes as "stats:bytes:value",
+        'Approximate size of the table as reported by Snowflake' as "stats:bytes:description",
+        (bytes is not null) as "stats:bytes:include",
+
+        'Last Modified' as "stats:last_modified:label",
+        to_varchar(convert_timezone('UTC', last_altered), 'yyyy-mm-dd HH24:MI'||'UTC') as "stats:last_modified:value",
+        'The timestamp for last update/change' as "stats:last_modified:description",
+        (last_altered is not null and table_type='BASE TABLE') as "stats:last_modified:include"
+    from DBT_PRACTICE.INFORMATION_SCHEMA.tables
+            where (
+                (
+                    
+    "table_schema" ilike 'SNAPSHOTS' and upper("table_schema") = upper('SNAPSHOTS')
+
+                    and 
+    "table_name" ilike 'stg_customers_check' and upper("table_name") = upper('stg_customers_check')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'SNAPSHOTS' and upper("table_schema") = upper('SNAPSHOTS')
+
+                    and 
+    "table_name" ilike 'customers_incremental' and upper("table_name") = upper('customers_incremental')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'SNAPSHOTS' and upper("table_schema") = upper('SNAPSHOTS')
+
+                    and 
+    "table_name" ilike 'stg_customers' and upper("table_name") = upper('stg_customers')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'RAW' and upper("table_schema") = upper('RAW')
+
+                    and 
+    "table_name" ilike 'CUSTOMERS' and upper("table_name") = upper('CUSTOMERS')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'SNAPSHOTS' and upper("table_schema") = upper('SNAPSHOTS')
+
+                    and 
+    "table_name" ilike 'customer_snapshot' and upper("table_name") = upper('customer_snapshot')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'SNAPSHOTS' and upper("table_schema") = upper('SNAPSHOTS')
+
+                    and 
+    "table_name" ilike 'customer_check_snapshot' and upper("table_name") = upper('customer_check_snapshot')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'RAW' and upper("table_schema") = upper('RAW')
+
+                    and 
+    "table_name" ilike 'CUSTOMERS_CHECK' and upper("table_name") = upper('CUSTOMERS_CHECK')
+
+                )
+            )
+        ),
+        columns as (
+            select
+        table_catalog as "table_database",
+        table_schema as "table_schema",
+        table_name as "table_name",
+
+        column_name as "column_name",
+        ordinal_position as "column_index",
+        data_type as "column_type",
+        comment as "column_comment"
+    from DBT_PRACTICE.INFORMATION_SCHEMA.columns
+            where (
+                (
+                    
+    "table_schema" ilike 'SNAPSHOTS' and upper("table_schema") = upper('SNAPSHOTS')
+
+                    and 
+    "table_name" ilike 'stg_customers_check' and upper("table_name") = upper('stg_customers_check')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'SNAPSHOTS' and upper("table_schema") = upper('SNAPSHOTS')
+
+                    and 
+    "table_name" ilike 'customers_incremental' and upper("table_name") = upper('customers_incremental')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'SNAPSHOTS' and upper("table_schema") = upper('SNAPSHOTS')
+
+                    and 
+    "table_name" ilike 'stg_customers' and upper("table_name") = upper('stg_customers')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'RAW' and upper("table_schema") = upper('RAW')
+
+                    and 
+    "table_name" ilike 'CUSTOMERS' and upper("table_name") = upper('CUSTOMERS')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'SNAPSHOTS' and upper("table_schema") = upper('SNAPSHOTS')
+
+                    and 
+    "table_name" ilike 'customer_snapshot' and upper("table_name") = upper('customer_snapshot')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'SNAPSHOTS' and upper("table_schema") = upper('SNAPSHOTS')
+
+                    and 
+    "table_name" ilike 'customer_check_snapshot' and upper("table_name") = upper('customer_check_snapshot')
+
+                )
+             or 
+                (
+                    
+    "table_schema" ilike 'RAW' and upper("table_schema") = upper('RAW')
+
+                    and 
+    "table_name" ilike 'CUSTOMERS_CHECK' and upper("table_name") = upper('CUSTOMERS_CHECK')
+
+                )
+            )
+        )
+        select *
+    from tables
+    join columns using ("table_database", "table_schema", "table_name")
+    order by "column_index"
+/* {"app": "dbt", "dbt_version": "1.12.0", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "DBT_PRACTICE.information_schema"} */
+[0m16:02:14.074495 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:02:14.074701 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:02:19.226247 [debug] [ThreadPool]: SQL status: SUCCESS 39 in 5.151 seconds
+[0m16:02:21.120023 [debug] [ThreadPool]: SQL status: SUCCESS 433 in 7.045 seconds
+[0m16:02:22.036903 [debug] [MainThread]: Wrote artifact CatalogArtifact to C:\Arjun_dbt_project\old_dbt_project\target\catalog.json
+[0m16:02:22.080086 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Arjun_dbt_project\old_dbt_project\target\manifest.json
+[0m16:02:22.084301 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Arjun_dbt_project\old_dbt_project\target\semantic_manifest.json
+[0m16:02:22.088079 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Arjun_dbt_project\old_dbt_project\target\osi_document.json
+[0m16:02:22.088357 [info ] [MainThread]: Catalog written to C:\Arjun_dbt_project\old_dbt_project\target\catalog.json
+[0m16:02:22.089444 [debug] [MainThread]: Command `dbt docs generate` succeeded at 16:02:22.089342 after 19.81 seconds
+[0m16:02:22.089675 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m16:02:22.089841 [debug] [MainThread]: Connection 'DSP_PROJ.information_schema' was left open.
+[0m16:02:22.090013 [debug] [MainThread]: On DSP_PROJ.information_schema: Close
+[0m16:02:22.740170 [debug] [MainThread]: Connection 'DBT_PRACTICE.information_schema' was left open.
+[0m16:02:22.740762 [debug] [MainThread]: On DBT_PRACTICE.information_schema: Close
+[0m16:02:23.365870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277DEE5FD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277E261B540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277E261BE30>]}
+[0m16:02:23.366849 [debug] [MainThread]: Flushing usage events
+[0m16:02:25.062654 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:02:49.800311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F4B7C5160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F4DEE3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F4DEE3750>]}
+
+
+============================== 16:02:49.803411 | 497f0181-371f-4885-a354-2d09bf84894b ==============================
+[0m16:02:49.803411 [info ] [MainThread]: Running with dbt=1.12.0
+[0m16:02:49.803927 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt docs serve', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Arjun_dbt_project\\old_dbt_project\\logs'}
+[0m16:02:50.144208 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m16:02:50.144640 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m16:02:50.144904 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m16:02:50.341075 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '497f0181-371f-4885-a354-2d09bf84894b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F4BE9DE00>]}
+[0m16:02:50.391405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '497f0181-371f-4885-a354-2d09bf84894b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F49CEEF10>]}
+[0m16:31:13.933229 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m16:31:14.071334 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Arjun_dbt_project\dbt_practices\venv\Lib\site-packages\dbt\cli\requires.py", line 190, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Arjun_dbt_project\dbt_practices\venv\Lib\site-packages\dbt\cli\requires.py", line 136, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Arjun_dbt_project\dbt_practices\venv\Lib\site-packages\dbt\cli\requires.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Arjun_dbt_project\dbt_practices\venv\Lib\site-packages\dbt\cli\requires.py", line 332, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Arjun_dbt_project\dbt_practices\venv\Lib\site-packages\dbt\cli\requires.py", line 379, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Arjun_dbt_project\dbt_practices\venv\Lib\site-packages\dbt\cli\main.py", line 322, in docs_serve
+    results = task.run()
+  File "C:\Arjun_dbt_project\dbt_practices\venv\Lib\site-packages\dbt\task\docs\serve.py", line 29, in run
+    httpd.serve_forever()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m16:31:14.158843 [debug] [MainThread]: Command `dbt docs serve` failed at 16:31:14.153980 after 1704.47 seconds
+[0m16:31:14.169896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F4FADE150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F4FADE250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F4FAE2300>]}
+[0m16:31:14.177369 [debug] [MainThread]: Flushing usage events
+[0m16:31:16.132847 [debug] [MainThread]: An error was encountered while trying to flush usage events
