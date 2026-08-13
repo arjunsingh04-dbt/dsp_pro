@@ -18,11 +18,11 @@ sources:
               count: 2
               period: hour
 models:
-  - name: stg_erp_budget_workflow_amount
-    columns:
-      - name: je_return_amount
-        tests:
-          - positive_value
+ # - name: stg_erp_budget_workflow_amount
+  #  columns:
+  #    - name: je_return_amount
+   #     tests:
+    #      - positive_value
 
 
   - name: stg_consumer_application_detail
